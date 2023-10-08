@@ -12,7 +12,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--var-black-color);
     color: white;
     font-style: var(--var-fontStyle);
 }
@@ -22,8 +21,10 @@ img {
 }
 
 body {
+    background-color: var(--var-black-color);
     width: 100%;
     height: 120vp;
+    font-family: 'Manrope', sans-serif;
 }
 
 
@@ -65,28 +66,138 @@ body {
 
 .fullstack_Text_div {
     position: relative;
-    width: 1412px;
-    height: 322px;
+    /* width: 1412px;
+    height: 322px; */
     top: 338px;
     left: 245px;
+
+    .title {
+        font-family: 'Manrope', sans-serif;
+        font-size: 216px;
+        font-weight: 700;
+        letter-spacing: -.09em;
+        line-height: 180px;
+        text-align: left;
+        background-color: rgba(240, 115, 88, 0.13)8;
+        background-image: linear-gradient(180deg, #F07358 17.39%, rgba(240, 115, 88, 0.13) 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+}
+
+.BoothTime_logo {
+    z-index: 1111;
+    background: transparent;
+    margin-top: 17%;
+    display: flex;
 
 }
 
 .BoothTime_text {
-    width: 445px;
-    height: 320px;
-    top: 615px;
-    left: 261px;
+    /* width: 445px;
+    height: 320px; */
+    margin-left: 17%;
+    background: transparent;
+
+    .h3 {
+        font-family: Manrope;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 97px;
+        letter-spacing: -0.04em;
+        text-align: left;
+        background: transparent;
+    }
+
+    .label {
+        font-family: Manrope;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 41px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        background: transparent;
+    }
 
 }
 
+.logo_842 {
+    width: 266.07px;
+    height: 265.91px;
+    margin-left: 10%;
+    margin-top: 1%;
+
+    .img1 {
+        background: transparent;
+    }
+
+    .img2 {
+        position: absolute;
+        margin-left: -235px;
+        margin-top: 1%;
+    }
+}
+
 .wina_watch_div {
-    width: 1472px;
+    width: 100vw;
     height: 749px;
     top: 2881px;
     left: -16px;
-
+    background-size: cover;
+    background-color: rgb(3, 50, 54);
+    display: flex;
     background-image: url(/assets/Images/Screen\ Shot\ 2022-09-02\ at\ 12.27\ 1.png);
+
+    .text-1 {
+        margin: 15%;
+
+        .p-white {
+            font-family: Manrope;
+            font-size: 104px;
+            font-weight: 700;
+            line-height: 95px;
+            letter-spacing: -0.09em;
+            text-align: left;
+
+        }
+
+        .para {
+            font-family: Manrope;
+            font-size: 104px;
+            font-weight: 700;
+            line-height: 95px;
+            letter-spacing: -0.09em;
+            text-align: left;
+            color: #F07358
+        }
+
+    }
+
+    .text-2 {
+        margin-top: 18%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        .para {
+            font-family: Manrope;
+            font-size: 34px;
+            font-weight: 500;
+            line-height: 49px;
+            letter-spacing: -0.03em;
+            text-align: left;
+
+        }
+
+        .img {
+            height: 64px;
+            width: 64px;
+        }
+    }
 }
 
 .Packet_Pushers {
@@ -94,11 +205,14 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: var(--var-Humboldt-color);
+    margin-top: 10%;
+    padding: 5%;
 }
 
 .Packet_Pushers_logo {
     display: flex;
     flex-direction: column;
+
 }
 
 .two_menPic_mic {
@@ -115,9 +229,149 @@ body {
     width: 204.61px;
     height: 55px;
     align-self: center;
+    margin-top: 5%;
 }
 
-.Packet_Pushers_Text
-{
-    
+.Topgolf {
+    display: flex;
+    margin-top: 10%;
+
+    .img {
+        position: relative;
+        margin-left: -135px;
+    }
+}
+
+.golf-title {
+    z-index: 111111;
+    margin-left: 13%;
+    margin-top: 26%;
+
+    .title {
+        font-family: Manrope;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 85px;
+        letter-spacing: -0.11em;
+        text-align: left;
+        background-color: rgba(240, 115, 88, 0.13)8;
+        background-image: linear-gradient(180deg, #F07358 17.39%, rgba(240, 115, 88, 0.13) 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+
+    .li {
+        font-family: Manrope;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: -0.03em;
+        text-align: left;
+
+    }
+
+}
+
+.Packet_Pushers_Text {
+    .h4 {
+
+        font-family: Manrope;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 97px;
+        letter-spacing: -0.04em;
+        text-align: left;
+    }
+
+    .para {
+        font-family: Manrope;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+}
+
+.Topgolf_logo_Text {
+    font-family: Manrope;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 97px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-top: 35px;
+
+}
+
+.Topgolf_Downtimetext {
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+.TopGolf_Text_Form {
+    z-index: 11111;
+    margin-left: -100px
+}
+
+.Form_Area {
+    width: 444px;
+    height: 707px;
+    top: 2045px;
+    left: 1217px;
+    border-radius: 8px;
+    angle: 180 deg;
+    background-color: rgba(240, 115, 88, 1);
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+
+    .h3 {
+        font-family: Manrope;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 46px;
+        letter-spacing: -0.03em;
+        text-align: left;
+
+    }
+
+    .form {
+        .input {
+            width: 387.2px;
+            height: 51.2px;
+            top: 1456.2px;
+            left: 800px;
+        }
+
+        .submit {
+            width: 387.2px;
+            height: 68.8px;
+            top: 1947.4px;
+            left: 802.4px;
+            border-radius: 4.8px;
+            background-color: black;
+            text-align: center;
+            font-family: Manrope;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 46px;
+            letter-spacing: 0.02em;
+                
+
+
+        }
+    }
 }
