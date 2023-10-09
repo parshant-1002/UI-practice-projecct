@@ -561,21 +561,46 @@ body {
             background-image: none;
 
             .Topgolf {
+                background-image: none;
                 margin-top: 0;
                 flex-direction: column;
             }
 
+
             .golf-title {
+
+                margin-top: 0;
+                .text_list
+                {
+                    .title
+                    {
+                        font-size: 145px;
+                        line-height: 113px;
+                    }
+                }
                 .li {
-                    font-size: 25px;
+                    font-size: 45px;
                 }
 
             }
 
             .Topgolf {
                 .img {
+                    display: block;
                     margin-left: 0;
                 }
+            }
+
+            .golfLogo
+            {
+                top: 41px;
+                left: 13%;
+                margin-bottom: 10%;
+            }
+
+            .ball_tail
+            {
+                display: none;
             }
 
             .TopGolf_Text_Form {
@@ -583,12 +608,12 @@ body {
             }
 
             .Topgolf_logo_Text {
-                font-size: 30px;
+                font-size: 86px;
                 letter-spacing: 0;
             }
 
             .Topgolf_Downtimetext {
-                font-size: 20px;
+                font-size: 47px;
             }
 
             .Form_Area {
@@ -597,20 +622,20 @@ body {
                 margin-left: 5%;
 
                 .form {
-                    width: 280px;
+                    width: 80%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
                     .input {
-                        width: 240px;
-                        height: 30px;
+                        width:  596px;
+                        height: 52px;
                         margin: 15px;
                     }
 
                     .submit {
-                        width: 240px;
-                        height: 35px;
+                        width: 400px;
+                        height: 62px;
                         font-size: 28px;
                     }
                 }
@@ -621,12 +646,12 @@ body {
     .container-pc-pusher {
         .Packet_Pushers {
             width: inherit;
-            padding: 20%;
-            flex-direction: column;
+            padding: 5%;
+            flex-direction: row;
         }
 
         .two_menPic_mic {
-            width: inherit;
+            width: 400px;
             height: 413px;
             background-size: contain;
         }
@@ -658,21 +683,21 @@ body {
                 margin: 5%;
 
                 .p-white {
-                    font-size: 50px;
+                    font-size: 60px;
                     line-height: 35px;
                 }
 
                 .para {
-                    font-size: 50px;
-                    line-height: 35px;
+                    font-size: 60px;
+                    line-height: 40px;
                 }
             }
 
             .text-2 {
-                margin-top: 10%;
+                margin-top: 2%;
 
                 .para {
-                    font-size: 24px;
+                    font-size: 35px;
                     line-height: 25px;
                 }
             }
