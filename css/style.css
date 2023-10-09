@@ -38,14 +38,15 @@ body {
     display: flex;
     flex-direction: column;
 
-    .group-1{
+    .group-1 {
         width: inherit;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-image: url(/assets/Images/Group\ 1925.png);
         background-position: right 0em top -60px;
-        
+        background-repeat: no-repeat;
+
 
         .aws_prosimo {
             width: 500px;
@@ -68,14 +69,6 @@ body {
             height: 58.49px;
             left: 65%;
             top: 23%;
-        }
-        .Rainbow-right {
-            width: 3009.72px;
-            height: 1477.94px;
-            top: 500px;
-            left: 957.98px;
-            z-index: 1;
-
         }
 
         .fullstack_Text_div {
@@ -135,6 +128,7 @@ body {
                 height: 265.91px;
                 margin-left: 18%;
                 margin-top: 1%;
+                display: none;
 
                 .img1 {
                     width: inherit;
@@ -157,6 +151,8 @@ body {
         align-items: center;
         background-image: url(/assets/Images/Group\ 1926.png);
         background-position: left 0em top 0px;
+        background-repeat: no-repeat;
+
         .Topgolf_logo_Text {
             font-size: 48px;
             font-weight: 700;
@@ -176,17 +172,15 @@ body {
         }
 
         .TopGolf_Text_Form {
-            /* z-index: 11111; */
             margin-left: -100px
         }
 
         .Form_Area {
             width: 444px;
-            height: 707px;
+            height: 780px;
             top: 2045px;
             left: 1217px;
             border-radius: 8px;
-            /* angle: 180 deg; */
             background-color: rgba(240, 115, 88, 1);
             margin-top: 13%;
             display: flex;
@@ -220,12 +214,6 @@ body {
 
         }
 
-        .checkBok-div {
-            width: inherit;
-            height: 100px;
-            font-size: 20px;
-        }
-
         .input {
             width: 387.2px;
             height: 51.2px;
@@ -236,10 +224,17 @@ body {
     }
 
     .Topgolf {
+        width: 80%;
         display: flex;
         margin-top: 10%;
+        display: flex;
+        justify-content: space-around;
+        background-image: url(/assets/Images/golf.png);
+        background-position: center;
+        background-repeat: no-repeat;
 
         .img {
+            display: none;
             position: relative;
             margin-left: -135px;
             z-index: -1;
@@ -251,7 +246,31 @@ body {
     }
 
     .golf-title {
-        margin-top: 28%;
+        margin-top: 18%;
+        margin-left: 10%;
+
+        .text_list {
+            margin-top: 20%;
+            z-index: 1;
+        }
+
+        .golfLogo {
+            position: relative;
+            width: 326px;
+            height: 88.34px;
+            top: 348px;
+            left: -50px;
+
+        }
+
+        .ball_tail {
+            width: 1221px;
+            height: 573.18px;
+            z-index: -1;
+            position: absolute;
+            left: 150px;
+            bottom: -160%;
+        }
 
         .title {
             font-size: 80px;
@@ -345,12 +364,6 @@ body {
 
         }
 
-        .checkBok-div {
-            width: inherit;
-            height: 100px;
-            font-size: 20px;
-        }
-
         .input {
             width: 387.2px;
             height: 51.2px;
@@ -418,9 +431,6 @@ body {
 
     }
 }
-
-
-
 .container-watch {
 
     .wina_watch_div {
@@ -481,6 +491,196 @@ body {
 
 }
 
+@media (min-width:768px) and (max-width : 996px) {
+
+    body {
+        width: 100%;
+    }
+
+
+    .main {
+        width: inherit;
+        align-items: center;
+
+        .group-1 {
+            width: inherit;
+            background-image: none;
+            align-items: center;
+
+            .aws_prosimo {
+                width: 80%;
+
+
+                .aws_invent {
+                    width: 350px;
+                }
+
+                .prosimo {
+                    width: 300px;
+                    left: 50%;
+                }
+            }
+
+            .fullstack_Text_div {
+                width: 80%;
+
+                .title {
+                    font-size: 130px;
+                    line-height: 90px;
+                }
+            }
+
+            .BoothTime_logo {
+
+                width: 80%;
+                flex-direction: column;
+                margin-top: 48%;
+                margin-left: 46%;
+                
+                .BoothTime_text
+                {
+                    .h3{
+                        font-size: 80px;
+                    }
+
+                    .label
+                    {
+                        font-size: 40px;
+                    }
+                }
+                .logo_842 {
+                    display: block;
+                    margin-left: 10%;
+                    margin-top: 20%;
+                }
+            }
+        }
+
+        .group-2 {
+            width: inherit;
+            background-image: none;
+
+            .Topgolf {
+                margin-top: 0;
+                flex-direction: column;
+            }
+
+            .golf-title {
+                .li {
+                    font-size: 25px;
+                }
+
+            }
+
+            .Topgolf {
+                .img {
+                    margin-left: 0;
+                }
+            }
+
+            .TopGolf_Text_Form {
+                margin-left: 0;
+            }
+
+            .Topgolf_logo_Text {
+                font-size: 30px;
+                letter-spacing: 0;
+            }
+
+            .Topgolf_Downtimetext {
+                font-size: 20px;
+            }
+
+            .Form_Area {
+                width: inherit;
+                height: 600px;
+                margin-left: 5%;
+
+                .form {
+                    width: 280px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .input {
+                        width: 240px;
+                        height: 30px;
+                        margin: 15px;
+                    }
+
+                    .submit {
+                        width: 240px;
+                        height: 35px;
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-pc-pusher {
+        .Packet_Pushers {
+            width: inherit;
+            padding: 20%;
+            flex-direction: column;
+        }
+
+        .two_menPic_mic {
+            width: inherit;
+            height: 413px;
+            background-size: contain;
+        }
+
+        .Packet_Pushers_Text {
+
+            .h4 {
+                font-size: 35px;
+            }
+
+            .para {
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .container-watch {
+        .wina_watch_div {
+            background-size: cover;
+            background-position: center;
+            width: inherit;
+            height: 500px;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+
+            .text-1 {
+                margin: 5%;
+
+                .p-white {
+                    font-size: 50px;
+                    line-height: 35px;
+                }
+
+                .para {
+                    font-size: 50px;
+                    line-height: 35px;
+                }
+            }
+
+            .text-2 {
+                margin-top: 10%;
+
+                .para {
+                    font-size: 24px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+}
+
 @media (min-width:576px) and (max-width :768px) {
 
     body {
@@ -491,9 +691,9 @@ body {
         width: inherit;
         align-items: center;
 
-        .group-1,
-        .group-2 {
+        .group-1 {
             width: inherit;
+            background-image: none;
 
             .aws_prosimo {
                 width: inherit;
@@ -523,12 +723,15 @@ body {
                 margin-left: 2%;
 
                 .logo_842 {
+                    display: block;
                     margin: 0;
                 }
             }
         }
 
         .group-2 {
+            width: inherit;
+
             .Topgolf {
                 flex-direction: column;
             }
@@ -662,6 +865,7 @@ body {
         .group-1,
         .group-2 {
             width: inherit;
+            background-image: none;
 
             .aws_prosimo {
                 width: inherit;
@@ -688,9 +892,9 @@ body {
 
             .BoothTime_logo {
                 width: inherit;
-                margin-top: 80%;
+                margin-top: 70%;
                 flex-direction: column;
-                margin-left: 3%;
+                margin-left: 34%;
 
                 .BoothTime_text {
                     margin-left: 0;
@@ -703,6 +907,7 @@ body {
                 }
 
                 .logo_842 {
+                    display: block;
                     margin-left: 0%;
                     margin-top: 4%;
                 }
@@ -710,13 +915,16 @@ body {
         }
 
         .group-2 {
-
             .Topgolf {
                 width: inherit;
+                background-image: none;
                 flex-direction: column;
             }
 
             .golf-title {
+                width: inherit;
+                height: 500px;
+
                 .li {
                     font-size: 20px;
                 }
@@ -725,6 +933,7 @@ body {
 
             .Topgolf {
                 .img {
+                    display: block;
                     width: inherit;
                     margin-left: 0;
                 }
@@ -736,13 +945,22 @@ body {
             }
 
             .Topgolf_logo_Text {
-                font-size: 30px;
+                font-size: 35px;
                 letter-spacing: 0;
             }
 
             .Topgolf_Downtimetext {
-                font-size: 22px;
+                font-size: 25px;
             }
+
+            .golfLogo {
+                top: 3%;
+            }
+
+            .ball_tail {
+                display: none;
+            }
+
 
             .Form_Area {
                 width: inherit;
@@ -774,15 +992,17 @@ body {
 
     .container-pc-pusher {
         width: 100%;
+        height: 730px;
 
         .Packet_Pushers {
             width: inherit;
             flex-direction: column;
+            align-items: center;
         }
 
         .two_menPic_mic {
             width: 300px;
-            height: 300px;
+            height: 310px;
             background-size: contain;
         }
 
@@ -790,11 +1010,11 @@ body {
             width: inherit;
 
             .h4 {
-                font-size: 30px;
+                font-size: 35px;
             }
 
             .para {
-                font-size: 20px;
+                font-size: 23px;
                 line-height: 25px;
             }
         }
