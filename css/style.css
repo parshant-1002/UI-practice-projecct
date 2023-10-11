@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Manrope');
+@import url("https://fonts.googleapis.com/css?family=Manrope");
 
 :root {
     --var-Text_color: white;
-    --var-Humboldt-color: #F07358;
+    --var-Humboldt-color: #f07358;
     --var-black-color: black;
     --var-fontStyle: "manrope";
     --var-fontweight: 700;
 }
-
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: white;
-    font-style: var(--var-fontStyle);
+    font-family: var(--var-fontStyle);
 }
 
 img {
@@ -24,701 +23,757 @@ img {
 html,
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--var-black-color);
     width: 100%;
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 
-.main {
+.img-fluid {
+    max-width: 100%;
+}
+
+/* Header */
+
+.aws_prosimo {
+
+    width: 600px;
+    margin: 0px auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* padding-bottom: 10%; */
+}
+
+/* End header */
+
+.group-1 {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/Images/Group1933.png);
+    background-position: right 0em bottom -300px;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+.sub-group {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.group-1 .sub-container {
+    padding: 100px;
+}
+
+.fullstack_Text_div {
+    width: 1000px;
+    min-height: 323px;
+}
+
+.fullstack_Text_div .title {
+    font-size: 180px;
+    line-height: 140px;
+    letter-spacing: -0.06em;
+    text-align: left;
+    height: 390px;
+    background-color: rgba(240, 115, 88, 0.13) 8;
+    background-image: linear-gradient(180deg,
+            #f07358 17.39%,
+            rgba(240, 115, 88, 0.13) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.BoothTime_logo {
     width: 100%;
+    display: flex;
+    position: relative;
+    left: 1%;
+}
+
+.join_logo {
+    position: absolute;
+    right: 156px;
+    top: -190px;
+    width: 250px;
+}
+
+.join_logo img {
+    width: 100%;
+}
+
+.join_logo .frame {
+    margin-left: -70px;
+    z-index: 1;
+}
+
+.join_logo .img2 {
+    position: absolute;
+    width: 190px;
+    right: 97px;
+    top: 25px;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+
+
+/* @keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.BoothTime_text {
+    max-width: 440px;
+    margin-top: -18%;
+}
+
+.BoothTime_text .h3 {
+    font-size: 48px;
+    font-weight: var(--var-fontweight);
+    line-height: 1.5;
+    letter-spacing: -0.04em;
+    text-align: left;
+    background: transparent;
+    /* margin-bottom: 5%; */
+}
+
+.BoothTime_text p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    text-align: left;
+    background: transparent;
+}
+
+.img1 {
+    width: inherit;
+    background: transparent;
+}
+
+.img2 {
+    position: absolute;
+    margin-left: -229px;
+    margin-top: 1%;
+}
+
+.group-2 {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/Images/Group\ 1926.png);
+    background-position: left -4em top 0px;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+.sub-group-1 {
+    width: 1000px;
+}
+
+.Topgolf_logo_Text {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 97px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-top: 35px;
+}
+
+.Topgolf_Downtimetext {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+.TopGolf_Text_Form {
+    margin-left: -100px;
+}
+
+.Form_Area {
+    width: 444px;
+    min-height: 707px;
+    top: 2045px;
+    left: 1217px;
+    border-radius: 8px;
+    background-color: rgba(240, 115, 88, 1);
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.input {
+    width: 387.2px;
+    height: 51.2px;
+    top: 1456.2px;
+    left: 800px;
+    padding: 20px;
+    border: none;
+}
+
+.Topgolf {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.golf_pic {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    right: -55%;
+    z-index: -1;
+}
+
+.Topgolf .img {
+    position: absolute;
+    margin-left: -135px;
+    z-index: -1;
+}
+
+.golf_pic img {
+    width: 100%;
+}
+
+.col-half {
+    position: relative;
+    max-width: 55%;
+    display: flex;
+    margin-left: 2%;
+}
+
+.golf-title {
+    margin-top: 84%;
+    width: 410px;
+    margin-left: 7%;
+}
+
+.golf-title .title {
+    font-size: 80px;
+    font-weight: 700;
+    height: 190px;
+    line-height: 85px;
+    letter-spacing: -0.11em;
+    text-align: left;
+    background-color: rgba(240, 115, 88, 0.13) 8;
+    background-image: linear-gradient(180deg,
+            #f07358 17.39%,
+            rgba(240, 115, 88, 0.13) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.golf-title .listing {
+    margin-left: 9%;
+    width: 388px;
+}
+
+
+.golf-title .li {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    z-index: 1;
+}
+
+.golf-title .li::marker {
+    color: #4ABCC5;
+}
+
+.golf-title .golf_logo {
+    margin-top: 56%;
+    margin-left: -10%;
+}
+
+.golf_stick {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 56%;
+    z-index: -1;
+    top: 30%;
+}
+
+.Topgolf_logo_Text {
+    font-size: 48px;
+    font-weight: var(--var-fontweight);
+    line-height: 97px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-top: 35px;
+}
+
+.Topgolf_Downtimetext {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+.TopGolf_Text_Form {
+    margin-left: -100px;
+}
+
+
+.h3 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-bottom: 4%;
+}
+
+.form {
+    width: 90%;
     display: flex;
     flex-direction: column;
 
-    .group-1 {
+    gap: 20px;
+}
+
+.form .submit {
+    width: 387.2px;
+    height: 68.8px;
+    border-radius: 4.8px;
+    background-color: black;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    border: none;
+}
+
+.form .checkBox-div,
+.checkBox-div-1 {
+    width: 387.2px;
+    height: 51.2px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox {
+    width: 5%;
+}
+
+.small {
+    width: 93%;
+    line-height: 30px;
+    font-size: 19px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.container-pc-pusher {
+    background-color: var(--var-Humboldt-color);
+}
+
+.sub-Container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.Packet_Pushers {
+    width: inherit;
+    display: flex;
+    /* padding: 4%; */
+    padding: 20px 20px;
+    justify-content: space-around;
+}
+
+.Packet_Pushers_logo {
+
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Packet_Pushers_Text {
+    margin-top: 10px;
+    width: 45%;
+}
+
+.two_menPic_mic {
+    width: 513px;
+    height: 533px;
+    background-color: var(--var-Humboldt-color);
+}
+
+.packet_img {
+    background-color: var(--var-Humboldt-color);
+    align-self: center;
+    margin-top: 6%;
+}
+
+.Packet_Pushers_Text .h4 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 97px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-bottom: 4%;
+}
+
+.Packet_Pushers_Text .para {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+}
+
+.container-watch {
+    position: relative;
+    background-image: url(/assets/Images/Screen\ Shot\ 2022-09-02\ at\ 12.27\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.container-watch::before {
+    content: '';
+    background: #02707A;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.container-watch .wina_watch_div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 10%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container-watch .p-white {
+    font-size: 104px;
+    font-weight: var(--var-fontStyle);
+    line-height: 95px;
+    letter-spacing: -0.09em;
+    text-align: left;
+}
+
+.container-watch .para {
+    font-size: 104px;
+    font-weight: var(--var-fontStyle);
+    line-height: 95px;
+    letter-spacing: -0.09em;
+    text-align: left;
+    color: #f07358;
+}
+
+.text-2 {
+    width: 35%;
+    text-align: center;
+}
+
+.text-2 .para {
+    color: var(--var-Text_color);
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 49px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+.text-2 .img {
+    height: 64px;
+    width: 64px;
+    cursor: pointer;
+}
+
+@media (max-width:1028px) {
+    .main {
         width: inherit;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        background-image: url(/assets/Images/Group\ 1925.png);
-        background-position: right 0em top -60px;
-        background-repeat: no-repeat;
+    }
 
+    .group-1 {
+        background-position: bottom -267px right 0px;
+        width: inherit;
+    }
 
-        .aws_prosimo {
-            width: 500px;
-            display: flex;
-            position: absolute;
-            top: 20%;
-            transform: translate(0, -40%);
-            border: 1.3px;
-            margin: auto;
-            justify-content: space-between;
-        }
+    .aws_prosimo {
 
         .aws_invent {
-            border: 1.3px;
+            width: 450px;
         }
 
         .prosimo {
+            width: 400px;
+        }
+    }
+
+    .sub-group {
+        width: 90%;
+    }
+
+    .fullstack_Text_div {
+        width: inherit;
+        height: 400px;
+
+    }
+
+    .fullstack_Text_div .title {
+        font-size: 100px;
+        line-height: 90px;
+    }
+
+    .BoothTime_logo {
+        width: inherit;
+        /* flex-direction: column; */
+        margin-left: -1%;
+
+        .join_logo {
             position: absolute;
-            width: 274.3px;
-            height: 58.49px;
-            left: 65%;
-            top: 23%;
+            right: 10px;
+            top: -250px;
+            width: 250px;
+            margin: 0;
         }
+    }
 
-        .fullstack_Text_div {
-            /* width: 1000px; */
-            position: absolute;
-            top: 40%;
+    .BoothTime_text {
+        margin-top: -40%;
+    }
 
+    .BoothTime_text .h3 {
+        font-size: 40px;
+    }
 
-            .title {
-                font-size: 216px;
-                font-weight: 900;
-                letter-spacing: -.09em;
-                line-height: 180px;
-                text-align: left;
-                background-color: rgba(240, 115, 88, 0.13)8;
-                background-image: linear-gradient(180deg, #F07358 17.39%, rgba(240, 115, 88, 0.13) 100%);
-                background-size: 100%;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -moz-text-fill-color: transparent;
-            }
-        }
-
-        .BoothTime_logo {
-            width: 500px;
-            margin-right: 26%;
-            background: transparent;
-            margin-top: 37%;
-            display: flex;
-
-            .BoothTime_text {
-                background: transparent;
-
-                .h3 {
-                    font-size: 48px;
-                    font-weight: var(--var-fontweight);
-                    line-height: 97px;
-                    letter-spacing: -0.04em;
-                    text-align: left;
-                    background: transparent;
-                }
-
-                .label {
-                    font-size: 23px;
-                    font-weight: 400;
-                    line-height: 30px;
-                    letter-spacing: -0.02em;
-                    text-align: left;
-                    background: transparent;
-                }
-
-            }
-
-            .logo_842 {
-                width: 266.07px;
-                height: 265.91px;
-                margin-left: 18%;
-                margin-top: 1%;
-                display: none;
-
-                .img1 {
-                    width: inherit;
-                    background: transparent;
-                }
-
-                .img2 {
-                    position: absolute;
-                    margin-left: -229px;
-                    margin-top: 1%;
-                }
-            }
-        }
+    .golf_pic {
+        width: auto;
+        max-height: 1058px;
     }
 
     .group-2 {
         width: inherit;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-image: url(/assets/Images/Group\ 1926.png);
-        background-position: left 0em top 0px;
-        background-repeat: no-repeat;
-
-        .Topgolf_logo_Text {
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 97px;
-            letter-spacing: -0.04em;
-            text-align: left;
-            margin-top: 35px;
-
-        }
-
-        .Topgolf_Downtimetext {
-            font-size: 28px;
-            font-weight: 500;
-            line-height: 44px;
-            letter-spacing: -0.03em;
-            text-align: left;
-        }
-
-        .TopGolf_Text_Form {
-            margin-left: -100px
-        }
-
-        .Form_Area {
-            width: 444px;
-            height: 780px;
-            top: 2045px;
-            left: 1217px;
-            border-radius: 8px;
-            background-color: rgba(240, 115, 88, 1);
-            margin-top: 13%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding-top: 10%;
-        }
-
-        .h3 {
-            font-size: 38px;
-            font-weight: var(--var-fontweight);
-            line-height: 46px;
-            letter-spacing: -0.03em;
-            text-align: left;
-
-        }
-
-        .submit {
-            width: 387.2px;
-            height: 68.8px;
-            top: 1947.4px;
-            left: 802.4px;
-            border-radius: 4.8px;
-            background-color: black;
-            text-align: center;
-            font-size: 32px;
-            font-weight: var(--var-fontweight);
-            line-height: 46px;
-            letter-spacing: 0.02em;
-
-        }
-
-        .input {
-            width: 387.2px;
-            height: 51.2px;
-            top: 1456.2px;
-            left: 800px;
-
-        }
+        background-position: left -4em top -66px;
     }
 
     .Topgolf {
-        width: 80%;
-        display: flex;
-        margin-top: 10%;
-        display: flex;
-        justify-content: space-around;
-        background-image: url(/assets/Images/golf.png);
-        background-position: center;
-        background-repeat: no-repeat;
+        width: 90%;
+        /* flex-direction: ;
+    flex-direction: column; */
+    }
 
-        .img {
-            display: none;
-            position: relative;
-            margin-left: -135px;
-            z-index: -1;
-        }
-
-        .ball {
-            position: absolute;
-        }
+    .col-half {
+        width: 40%;
     }
 
     .golf-title {
-        margin-top: 18%;
-        margin-left: 10%;
-
-        .text_list {
-            margin-top: 20%;
-            z-index: 1;
-        }
-
-        .golfLogo {
-            position: relative;
-            width: 326px;
-            height: 88.34px;
-            top: 348px;
-            left: -50px;
-
-        }
-
-        .ball_tail {
-            width: 1221px;
-            height: 573.18px;
-            z-index: -1;
-            position: absolute;
-            left: 150px;
-            bottom: -160%;
-        }
-
-        .title {
-            font-size: 80px;
-            font-weight: var(--var-fontStyle);
-            line-height: 85px;
-            letter-spacing: -0.11em;
-            text-align: left;
-            background-color: rgba(240, 115, 88, 0.13)8;
-            background-image: linear-gradient(180deg, #F07358 17.39%, rgba(240, 115, 88, 0.13) 100%);
-            background-size: 100%;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
-        }
-
-        .li {
-            font-size: 28px;
-            font-weight: 500;
-            line-height: 44px;
-            letter-spacing: -0.03em;
-            text-align: left;
-            z-index: 1;
-        }
-
+        margin-left: 5%;
+        margin-top: 100%;
     }
 
-    .Topgolf_logo_Text {
-        font-size: 48px;
-        font-weight: var(--var-fontweight);
-        line-height: 97px;
-        letter-spacing: -0.04em;
-        text-align: left;
-        margin-top: 35px;
-
+    .golf-title .li {
+        font-size: 22px;
     }
 
-    .Topgolf_Downtimetext {
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 44px;
-        letter-spacing: -0.03em;
-        text-align: left;
+    .Topgolf .img {
+        margin-left: 0;
+    }
+
+    .golf-title .golf_logo {
+        width: 200px;
+        margin-top: 70%;
+        margin-left: -2%;
+    }
+
+    .golf_stick {
+        right: 58%;
+        top: 33%;
     }
 
     .TopGolf_Text_Form {
-        z-index: 11111;
-        margin-left: -100px
+        width: 45%;
+        margin-left: 0;
+    }
+
+    .Topgolf_logo_Text {
+        font-size: 50px;
+        letter-spacing: 0;
+    }
+
+    .Topgolf_Downtimetext {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .prosimo_Logo {
+        font-size: 40px;
+        margin-bottom: 50px;
     }
 
     .Form_Area {
-        width: 444px;
-        height: 707px;
-        top: 2045px;
-        left: 1217px;
-        border-radius: 8px;
-        angle: 180 deg;
-        background-color: rgba(240, 115, 88, 1);
-        margin-top: 13%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 10%;
+        width: 100%;
+        min-height: 624px;
     }
 
-    .h3 {
-        font-family: Manrope;
-        font-size: 38px;
-        font-weight: 700;
-        line-height: 46px;
-        letter-spacing: -0.03em;
-        text-align: left;
-
+    .Form_Area .h3 {
+        font-size: 40px;
     }
 
     .form {
-        .submit {
-            width: 387.2px;
-            height: 68.8px;
-            top: 1947.4px;
-            left: 802.4px;
-            border-radius: 4.8px;
-            background-color: black;
-            text-align: center;
-            font-family: Manrope;
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 46px;
-            letter-spacing: 0.02em;
-
-        }
-
-        .input {
-            width: 387.2px;
-            height: 51.2px;
-            top: 1456.2px;
-            left: 800px;
-
-        }
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
-}
 
-.container-pc-pusher {
-    height: 700px;
-    background-color: var(--var-Humboldt-color);
+    .form .input {
+        width: 90%;
+        height: 25px;
+        /* margin: 15px; */
+    }
+
+    .form .submit {
+        width: 90%;
+        height: 60px;
+        font-size: 28px;
+        margin-bottom: 5%;
+    }
+
+    .form .checkBox-div,
+    .checkBox-div-1 {
+        width: 90%;
+        /* height: 30px; */
+    }
+
+    /* .checkBox-div-1 {
+    width: 90%;
+  } */
+
+    .small {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
 
     .Packet_Pushers {
         width: inherit;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10%;
+        /* flex-direction: column; */
     }
 
     .Packet_Pushers_logo {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .two_menPic_mic {
-        background-image: url(/assets/Images/Frame.svg);
-        width: 513px;
-        height: 533px;
-        background-color: #F07358;
-
-    }
-
-    .packet_img {
-        background-color: #F07358;
-        background-image: url(/assets/Images/Group\ 1685.png);
-        width: 204.61px;
-        height: 55px;
-        align-self: center;
-        margin-top: 5%;
+        align-items: center;
     }
 
     .Packet_Pushers_Text {
-        .h4 {
-
-            font-family: Manrope;
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 97px;
-            letter-spacing: -0.04em;
-            text-align: left;
-        }
-
-        .para {
-            font-family: Manrope;
-            font-size: 28px;
-            font-weight: 400;
-            line-height: 41px;
-            letter-spacing: 0em;
-            text-align: left;
-
-        }
-
+        margin-top: 0;
+        width: 30%;
     }
-}
-.container-watch {
 
-    .wina_watch_div {
-        width: 98.4vw;
-        height: 749px;
+    .Packet_Pushers_Text .h4 {
+        font-size: 28px;
+        margin-bottom: 5%;
+    }
+
+    .Packet_Pushers_Text .para {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .container-watch .wina_watch_div {
         background-size: cover;
-        background-color: rgb(3, 50, 54);
-        display: flex;
-        background-image: url(/assets/Images/Screen\ Shot\ 2022-09-02\ at\ 12.27\ 1.png);
-
-        .text-1 {
-            margin: 15%;
-
-            .p-white {
-                font-size: 104px;
-                font-weight: var(--var-fontStyle);
-                line-height: 95px;
-                letter-spacing: -0.09em;
-                text-align: left;
-
-            }
-
-            .para {
-                font-family: Manrope;
-                font-size: 104px;
-                font-weight: --varf;
-                line-height: 95px;
-                letter-spacing: -0.09em;
-                text-align: left;
-                color: #F07358
-            }
-
-        }
-
-        .text-2 {
-            margin-top: 18%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-
-            .para {
-                font-family: Manrope;
-                font-size: 34px;
-                font-weight: 500;
-                line-height: 49px;
-                letter-spacing: -0.03em;
-                text-align: left;
-
-            }
-
-            .img {
-                height: 64px;
-                width: 64px;
-            }
-        }
+        background-position: center;
+        width: inherit;
+        min-height: 500px;
+        align-items: center;
+        padding-top: 50px;
     }
 
+    .container-watch .text-1 {
+        margin: 5%;
+    }
+
+    .container-watch .p-white {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    .container-watch .para {
+        font-size: 65px;
+        line-height: 40px;
+    }
+
+    .text-2 {
+        width: 40%;
+    }
+
+    .text-2 .para {
+        font-size: 40px;
+        line-height: 40px;
+    }
 }
 
-@media (min-width:768px) and (max-width : 996px) {
-
-    body {
-        width: 100%;
-    }
-
-
+@media (max-width: 991px) {
     .main {
         width: inherit;
         align-items: center;
 
         .group-1 {
+            background-position: bottom 20px right 0px;
             width: inherit;
-            background-image: none;
-            align-items: center;
-
-            .aws_prosimo {
-                width: 80%;
-
-
-                .aws_invent {
-                    width: 350px;
-                }
-
-                .prosimo {
-                    width: 300px;
-                    left: 50%;
-                }
-            }
-
-            .fullstack_Text_div {
-                width: 80%;
-
-                .title {
-                    font-size: 130px;
-                    line-height: 90px;
-                }
-            }
-
-            .BoothTime_logo {
-
-                width: 80%;
-                flex-direction: column;
-                margin-top: 48%;
-                margin-left: 46%;
-                
-                .BoothTime_text
-                {
-                    .h3{
-                        font-size: 80px;
-                    }
-
-                    .label
-                    {
-                        font-size: 40px;
-                    }
-                }
-                .logo_842 {
-                    display: block;
-                    margin-left: 10%;
-                    margin-top: 20%;
-                }
-            }
-        }
-
-        .group-2 {
-            width: inherit;
-            background-image: none;
-
-            .Topgolf {
-                background-image: none;
-                margin-top: 0;
-                flex-direction: column;
-            }
-
-
-            .golf-title {
-
-                margin-top: 0;
-                .text_list
-                {
-                    .title
-                    {
-                        font-size: 145px;
-                        line-height: 113px;
-                    }
-                }
-                .li {
-                    font-size: 45px;
-                }
-
-            }
-
-            .Topgolf {
-                .img {
-                    display: block;
-                    margin-left: 0;
-                }
-            }
-
-            .golfLogo
-            {
-                top: 41px;
-                left: 13%;
-                margin-bottom: 10%;
-            }
-
-            .ball_tail
-            {
-                display: none;
-            }
-
-            .TopGolf_Text_Form {
-                margin-left: 0;
-            }
-
-            .Topgolf_logo_Text {
-                font-size: 86px;
-                letter-spacing: 0;
-            }
-
-            .Topgolf_Downtimetext {
-                font-size: 47px;
-            }
-
-            .Form_Area {
-                width: inherit;
-                height: 600px;
-                margin-left: 5%;
-
-                .form {
-                    width: 80%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .input {
-                        width:  596px;
-                        height: 52px;
-                        margin: 15px;
-                    }
-
-                    .submit {
-                        width: 400px;
-                        height: 62px;
-                        font-size: 28px;
-                    }
-                }
-            }
-        }
-    }
-
-    .container-pc-pusher {
-        .Packet_Pushers {
-            width: inherit;
-            padding: 5%;
-            flex-direction: row;
-        }
-
-        .two_menPic_mic {
-            width: 400px;
-            height: 413px;
-            background-size: contain;
-        }
-
-        .Packet_Pushers_Text {
-
-            .h4 {
-                font-size: 35px;
-            }
-
-            .para {
-                font-size: 20px;
-                line-height: 25px;
-            }
-        }
-    }
-
-    .container-watch {
-        .wina_watch_div {
-            background-size: cover;
-            background-position: center;
-            width: inherit;
-            height: 500px;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 50px;
-
-            .text-1 {
-                margin: 5%;
-
-                .p-white {
-                    font-size: 60px;
-                    line-height: 35px;
-                }
-
-                .para {
-                    font-size: 60px;
-                    line-height: 40px;
-                }
-            }
-
-            .text-2 {
-                margin-top: 2%;
-
-                .para {
-                    font-size: 35px;
-                    line-height: 25px;
-                }
-            }
-        }
-    }
-
-}
-
-@media (min-width:576px) and (max-width :768px) {
-
-    body {
-        width: 100%;
-    }
-
-    .main {
-        width: inherit;
-        align-items: center;
-
-        .group-1 {
-            width: inherit;
-            background-image: none;
 
             .aws_prosimo {
                 width: inherit;
@@ -743,12 +798,15 @@ body {
 
             .BoothTime_logo {
                 width: inherit;
+                height: 300px;
                 flex-direction: column;
-                margin-top: 65%;
-                margin-left: 2%;
+                margin-top: -4%;
 
-                .logo_842 {
-                    display: block;
+                .join_logo {
+                    position: absolute;
+                    right: 130px;
+                    top: 30px;
+                    width: 250px;
                     margin: 0;
                 }
             }
@@ -756,57 +814,314 @@ body {
 
         .group-2 {
             width: inherit;
+            background-position: left -4em top -66px;
+            /* margin-top: 20%; */
 
             .Topgolf {
+                width: 90%;
                 flex-direction: column;
+                align-items: center;
             }
 
             .golf-title {
                 .li {
-                    font-size: 25px;
-                }
-
-            }
-
-            .Topgolf {
-                .img {
-                    margin-left: 0;
+                    font-size: 22px;
                 }
             }
+
 
             .TopGolf_Text_Form {
-                margin-left: 0;
+                width: 90%;
+                margin-left: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             .Topgolf_logo_Text {
-                font-size: 30px;
+                width: 90%;
                 letter-spacing: 0;
             }
 
+            .prosimo_Logo {
+                /* margin-left: 11%; */
+                font-size: 86px;
+            }
+
             .Topgolf_Downtimetext {
-                font-size: 20px;
+                /* margin-left: 11%; */
+                font-size: 48px;
+                line-height: 60px;
+            }
+
+            .golf-title {
+                margin-left: -87px;
+                margin-top: 135px;
+            }
+
+            .golf-title .title {
+                font-size: 107px;
+                height: 224px;
+                line-height: 96px;
+            }
+
+            .golf-title .listing {
+                margin-left: 6%;
+            }
+
+            .golf_pic {
+                width: 288px;
+                max-height: 500px;
+                top: -80px;
+                right: -202px;
+            }
+
+            .golf_stick {
+                right: 316px;
+                top: 90px
+            }
+
+            .golf-title .golf_logo {
+                width: 255px;
+                margin-left: -20px;
+                margin-top: 121px;
             }
 
             .Form_Area {
-                width: inherit;
-                height: 600px;
-                margin-left: 5%;
+                width: 100%;
+
+                .h3 {
+                    font-size: 60px;
+                }
 
                 .form {
-                    width: 280px;
+                    width: 80%;
+                    gap: 7px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
                     .input {
-                        width: 240px;
-                        height: 30px;
+                        width: 90%;
+                        height: 50px;
                         margin: 15px;
                     }
 
                     .submit {
-                        width: 240px;
-                        height: 35px;
+                        width: 80%;
+                        height: 60px;
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    .small {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .container-pc-pusher {
+
+        .Packet_Pushers {
+            width: inherit;
+            padding: 5%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .two_menPic_mic {
+            width: 513px;
+            height: 531px;
+            background-size: contain;
+        }
+
+        .packet_img {
+            align-self: center;
+
+        }
+
+        .Packet_Pushers_Text {
+            width: 90%;
+
+            .h4 {
+                font-size: 70px;
+                margin-bottom: 5%;
+            }
+
+            .para {
+                font-size: 47px;
+                line-height: 60px;
+            }
+        }
+    }
+
+    .container-watch .wina_watch_div {
+        background-size: cover;
+        background-position: center;
+        width: inherit;
+        height: 500px;
+        /* flex-direction: column; */
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .container-watch .text-1 {
+        margin: 5%;
+    }
+
+    .container-watch .p-white {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    .container-watch .para {
+        font-size: 65px;
+        line-height: 40px;
+    }
+
+    .text-2 {
+        width: 46%;
+
+        .para {
+            font-size: 45px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: inherit;
+        align-items: center;
+
+        .group-1 {
+            background-position: bottom 20px right 0px;
+            width: inherit;
+
+            .aws_prosimo {
+                width: inherit;
+
+                .aws_invent {
+                    width: 250px;
+                }
+
+                .prosimo {
+                    width: 200px;
+                }
+            }
+
+            .fullstack_Text_div {
+                width: inherit;
+
+                .title {
+                    font-size: 80px;
+                    line-height: 90px;
+                }
+            }
+
+            .BoothTime_logo {
+                width: inherit;
+                height: 300px;
+                flex-direction: column;
+                margin-top: -11%;
+
+                .join_logo {
+                    position: absolute;
+                    right: 92px;
+                    top: 50px;
+                    width: 250px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .BoothTime_text p {
+            font-size: 24px;
+        }
+
+        .BoothTime_text h3 {
+            margin-top: 11px;
+        }
+
+        .group-2 {
+            width: inherit;
+
+            .sub-group-1 {
+                width: 90%;
+            }
+
+            .Topgolf {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .col-half {
+                width: 60%;
+            }
+
+            .golf-title {
+                margin-left: -133px;
+                margin-top: 136px;
+
+                .li {
+                    font-size: 28px;
+                }
+            }
+
+            .golf_stick {
+                right: 358px;
+                top: 150px;
+            }
+
+            .golf-title .golf_logo {
+                width: 200px;
+                margin-top: 150px;
+                margin-left: -12px;
+            }
+
+            .TopGolf_Text_Form {
+                width: 100%;
+                margin-left: 0px;
+
+            }
+
+            .Topgolf_logo_Text {
+                width: 100%;
+                font-size: 84px;
+                letter-spacing: 0;
+            }
+
+            .Topgolf_Downtimetext {
+                margin-left: 0%;
+                font-size: 36px;
+            }
+
+            .prosimo_Logo {
+                margin-left: 0;
+                font-size: 65px;
+            }
+
+            .Form_Area {
+                width: 100%;
+
+                .form {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .input {
+                        width: 90%;
+                        height: 50px;
+                        margin: 15px;
+                    }
+
+                    .submit {
+                        width: 50%;
+                        height: 60px;
                         font-size: 28px;
                     }
                 }
@@ -815,85 +1130,117 @@ body {
     }
 
     .container-pc-pusher {
+        min-height: 0;
+
         .Packet_Pushers {
             width: inherit;
-            padding: 20%;
+            padding: 5%;
             flex-direction: column;
+        }
+
+        .Packet_Pushers_logo {
+            align-items: center;
         }
 
         .two_menPic_mic {
             width: inherit;
-            height: 413px;
+            height: 531px;
             background-size: contain;
         }
 
-        .Packet_Pushers_Text {
+        .packet_img {
+            margin: 10% 0px 10% 0px;
+        }
 
+        .Packet_Pushers_Text {
             .h4 {
-                font-size: 35px;
+                font-size: 60px;
             }
 
             .para {
-                font-size: 20px;
-                line-height: 25px;
+                font-size: 40px;
+                line-height: 50px;
             }
         }
     }
 
-    .container-watch {
-        .wina_watch_div {
-            background-size: cover;
-            background-position: center;
-            width: inherit;
-            height: 500px;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 50px;
-
-            .text-1 {
-                margin: 5%;
-
-                .p-white {
-                    font-size: 50px;
-                    line-height: 35px;
-                }
-
-                .para {
-                    font-size: 50px;
-                    line-height: 35px;
-                }
-            }
-
-            .text-2 {
-                margin-top: 10%;
-
-                .para {
-                    font-size: 24px;
-                    line-height: 25px;
-                }
-            }
-        }
+    .container-watch .wina_watch_div {
+        background-size: cover;
+        background-position: center;
+        width: inherit;
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
     }
 
+    .container-watch .text-1 {
+        margin: 5%;
+    }
+
+    .container-watch .p-white {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    .container-watch .para {
+        font-size: 65px;
+        line-height: 40px;
+    }
+
+    .text-2 {
+        width: 65%;
+        margin-top: 0%;
+
+        .para {
+            font-size: 45px;
+            line-height: 40px;
+        }
+    }
 }
 
-@media(max-width:576px) {
+@media (max-width:680px) {
 
-    body {
-        width: 100%;
+
+    .main .group-2 .golf_stick {
+        right: 325px;
+        top: 219px;
     }
 
-    .main {
+    .main .group-2 .prosimo_Logo {
+        font-size: 55px;
+    }
 
+    .main .group-2 .Topgolf_Downtimetext {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
         width: 100%;
+
+        .group-1 {
+            background-position: bottom -76px right 0px;
+        }
+
+        .group-1 .sub-container {
+            padding: 0px;
+        }
 
         .group-1,
         .group-2 {
-            width: inherit;
-            background-image: none;
+
+            width: 100%;
+            padding: 3%;
+
+            .sub-group {
+                width: 100%;
+            }
 
             .aws_prosimo {
                 width: inherit;
+                justify-content: center;
 
                 .aws_invent {
                     width: 150px;
@@ -906,178 +1253,311 @@ body {
             }
 
             .fullstack_Text_div {
-                width: inherit;
-                top: 200px;
+                width: 100%;
 
                 .title {
-                    font-size: 70px;
-                    line-height: 50px;
+                    font-size: 75px;
+                    height: 350px;
+                    line-height: 68px;
                 }
             }
+
 
             .BoothTime_logo {
                 width: inherit;
-                margin-top: 70%;
                 flex-direction: column;
-                margin-left: 34%;
+                margin-left: -1%;
 
                 .BoothTime_text {
                     margin-left: 0;
-
-                    .label {
-
-                        font-size: 1.4rem;
-                        margin-left: 0;
-                    }
+                    margin-top: 0;
                 }
 
-                .logo_842 {
-                    display: block;
-                    margin-left: 0%;
-                    margin-top: 4%;
+                .join_logo {
+                    right: 40px;
+                    top: -4px;
                 }
             }
+        }
+
+        .BoothTime_text h3 {
+            font-size: 30px;
+            margin-top: -265px;
+        }
+
+        .BoothTime_text p {
+            font-size: 24px;
         }
 
         .group-2 {
+            margin-top: 0px;
+
+            .sub-group-1 {
+                width: 100%;
+            }
+
             .Topgolf {
-                width: inherit;
-                background-image: none;
+                width: 100%;
                 flex-direction: column;
+                align-items: center;
             }
 
-            .golf-title {
-                width: inherit;
-                height: 500px;
-
-                .li {
-                    font-size: 20px;
-                }
-
-            }
-
-            .Topgolf {
-                .img {
-                    display: block;
-                    width: inherit;
-                    margin-left: 0;
-                }
-            }
-
-            .TopGolf_Text_Form {
-                width: inherit;
+            .col-half {
+                width: 60%;
                 margin-left: 0;
             }
 
-            .Topgolf_logo_Text {
-                font-size: 35px;
-                letter-spacing: 0;
+            .golf-title {
+                width: 100%;
+                z-index: 1;
+                margin-left: -60px;
+                margin-top: 190px;
+
+
+                .li {
+                    font-size: 22px;
+                }
             }
 
-            .Topgolf_Downtimetext {
-                font-size: 25px;
+            .golf-title .title {
+                font-size: 53px;
+                line-height: 65px;
+                height: 150px;
             }
 
-            .golfLogo {
-                top: 3%;
+            .golf_pic {
+                width: 290px;
+                min-height: 700px;
+                right: -148px;
             }
 
-            .ball_tail {
-                display: none;
+            .golf_stick {
+                right: 252px;
+                top: 161px;
             }
 
+        }
 
-            .Form_Area {
-                width: inherit;
-                height: 600px;
+        /* .Topgolf {
+        .img {
+          width: inherit;
+          margin-left: 0;
+        }
+      } */
 
+        .golf-title .golf_logo {
+            width: 180px;
+            margin-top: 43%;
+            margin-left: -4%;
+        }
 
-                .form {
-                    width: inherit;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+        .TopGolf_Text_Form {
+            width: inherit;
+            margin-left: 0;
+        }
 
-                    .input {
-                        width: 240px;
-                        height: 30px;
-                        margin: 15px;
-                    }
+        .Topgolf_logo_Text {
+            font-size: 30px;
+            letter-spacing: 0;
+        }
 
-                    .submit {
-                        width: 240px;
-                        height: 35px;
-                        font-size: 28px;
-                    }
+        .group-2 .Topgolf_Downtimetext {
+            margin-left: 0;
+            font-size: 35px;
+            line-height: 40px;
+        }
+
+        .group-2 .prosimo_Logo {
+            margin-left: 0;
+            font-size: 63px;
+        }
+
+        .Form_Area {
+            margin-left: 0;
+            width: 100%;
+            align-items: center;
+            min-height: 640px;
+
+            .h3 {
+                font-size: 45px;
+            }
+
+            .form {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0px;
+
+                .input {
+                    width: 80%;
+                    height: 30px;
+                    margin: 15px;
+                }
+
+                .submit {
+                    width: 70%;
+                    height: 50px;
+                    font-size: 28px;
+                }
+
+                .checkBox-div,
+                .checkBox-div-1 {
+                    width: 89%;
                 }
             }
         }
+    }
+}
 
+.small {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.container-pc-pusher {
+    width: 100%;
+
+    .Packet_Pushers {
+        width: inherit;
+        flex-direction: column;
     }
 
-    .container-pc-pusher {
-        width: 100%;
-        height: 730px;
+    .two_menPic_mic {
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+    }
 
-        .Packet_Pushers {
-            width: inherit;
-            flex-direction: column;
-            align-items: center;
+    .packet_img {
+        margin-top: 24%;
+    }
+
+    .Packet_Pushers_Text {
+        width: inherit;
+
+        .h4 {
+            font-size: 35px;
         }
 
-        .two_menPic_mic {
-            width: 300px;
-            height: 310px;
-            background-size: contain;
+        .para {
+            font-size: 20px;
+            line-height: 30px;
         }
+    }
+}
 
-        .Packet_Pushers_Text {
-            width: inherit;
+.container-watch {
+    padding: 0;
 
-            .h4 {
-                font-size: 35px;
+    .wina_watch_div {
+        background-size: cover;
+        background-position: center;
+        width: inherit;
+        flex-direction: column;
+        align-items: center;
+
+        .text-1 {
+            margin: 5%;
+
+            .p-white {
+                font-size: 45px;
+                line-height: 30px;
             }
 
             .para {
-                font-size: 23px;
-                line-height: 25px;
+                font-size: 45px;
+                line-height: 80px;
+            }
+        }
+
+        .text-2 {
+            width: 80%;
+            margin-top: 0;
+
+            .para {
+                font-size: 30px;
+                line-height: 40px;
             }
         }
     }
+}
 
-    .container-watch {
-        .wina_watch_div {
-            background-size: cover;
-            background-position: center;
-            width: inherit;
-            height: 400px;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 50px;
+@media (max-width:550px) {
 
-            .text-1 {
-                margin: 5%;
 
-                .p-white {
-                    font-size: 40px;
-                    line-height: 30px;
-                }
-
-                .para {
-                    font-size: 40px;
-                    line-height: 35px;
-                }
-            }
-
-            .text-2 {
-                margin-top: 10%;
-
-                .para {
-                    font-size: 20px;
-                    line-height: 20px;
-                }
-            }
-        }
+    .main .group-2 .golf_stick {
+        right: 200px;
+        top: 240px;
     }
 
+    .main .group-2 .prosimo_Logo {
+        font-size: 50px;
+    }
+
+    .main .group-2 .Topgolf_Downtimetext {
+        font-size: 29px;
+    }
+}
+
+@media (max-width:450px) {
+
+
+    .main .group-2 .golf_stick {
+        right: 180px;
+        top: 300px;
+    }
+
+    .main .group-2 .prosimo_Logo {
+        font-size: 40px;
+    }
+
+    .main .group-2 .Topgolf_Downtimetext {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:380px) {
+
+    .group-1 .sub-container {
+        padding: 0px;
+    }
+
+    .main .group-1 .fullstack_Text_div .title {
+        font-size: 70px;
+    }
+
+    .main .group-2 .golf_stick {
+        right: 150px;
+        top: 330px;
+    }
+
+    .main .group-2 .prosimo_Logo {
+        font-size: 35px;
+    }
+
+    .main .group-2 .Topgolf_Downtimetext {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:280px) {
+
+    .group-1 .sub-container {
+        padding: 0px;
+    }
+
+    .main .group-2 .golf_stick {
+        right: 100px;
+        top: 400px;
+    }
+
+    .main .group-2 .prosimo_Logo {
+        font-size: 27px;
+    }
+
+    .main .group-2 .Topgolf_Downtimetext {
+        font-size: 17px;
+    }
 }
