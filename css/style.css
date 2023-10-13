@@ -64,8 +64,6 @@ body {
   background-image: url(/assets/Images/Group1933.png);
   background-position: right -3em bottom -240px;
   background-repeat: no-repeat;
-
-  z-index: -1;
 }
 
 .sub-group {
@@ -83,6 +81,7 @@ body {
 }
 
 .fullstack_Text_div {
+  z-index: -1;
   width: 1000px;
   min-height: 323px;
 }
@@ -228,10 +227,9 @@ body {
 }
 
 .golf_pic {
-  width: 90%;
   position: absolute;
   bottom: 0;
-  right: -55%;
+  right: -57%;
   z-index: -1;
 }
 
@@ -422,7 +420,7 @@ body {
   width: inherit;
   flex-direction: row;
   display: flex;
-  padding: 40px 20px;
+  padding: 60px 20px;
   justify-content: space-around;
 }
 
