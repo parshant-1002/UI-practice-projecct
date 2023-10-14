@@ -124,7 +124,7 @@ body {
 }
 
 .join_logo .frame {
-  margin-left: -70px;
+  margin-left: -75px;
   z-index: 1;
 }
 
@@ -132,7 +132,7 @@ body {
   position: absolute;
   width: 193px;
   height: 199px;
-  right: 96px;
+  right: 102px;
   top: 19px;
   animation-name: rotate;
   animation-duration: 20s;
@@ -245,19 +245,23 @@ body {
 }
 
 .col-half {
-  position: relative;
-  max-width: 55%;
+  /* position: relative; */
+  width: 63%;
   display: flex;
   margin-left: 8px;
+  background-image: url(/assets/Images/golf.png);
+  background-repeat: no-repeat;
+  background-position: right 0.1em bottom -3px;
 }
 
 .golf-title {
-  margin-top: 84%;
+  /* margin-top: 84%; */
   width: 410px;
   /* margin-left: 7%; */
 }
 
 .golf-title .title {
+  margin-top: 402px;
   font-size: 80px;
   font-weight: 700;
   height: 190px;
@@ -296,17 +300,17 @@ body {
 }
 
 .golf-title .golf_logo {
-  margin-top: 56%;
-  margin-left: 0%;
+  margin-top: 43%;
+  margin-left: -8%;
 }
 
 .golf_stick {
   width: 100%;
   position: absolute;
-  bottom: 0;
-  right: 56%;
+  bottom: 0px;
+  right: 0;
   z-index: -1;
-  top: 28%;
+  top: 175%;
 }
 
 .Topgolf_logo_Text {
@@ -328,16 +332,17 @@ body {
 }
 
 .TopGolf_Text_Form {
-  width: 45%;
+  width: 46%;
   margin-left: -100px;
 }
 
 .Form_Area {
+
   width: 444px;
   min-height: 707px;
   border-radius: 8px;
   background-color: rgba(240, 115, 88, 1);
-  margin-top: 18%;
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
