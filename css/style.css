@@ -62,7 +62,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url(/assets/Images/Group1933.png);
-  background-position: right -4em bottom -300px;
+  background-position: right -3.5em bottom -300px;
   background-repeat: no-repeat;
 }
 
@@ -192,7 +192,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url(/assets/Images/Group\ 1926.png);
-  background-position: left -4em top 134px;
+  background-position: left -4em top 90px;
   background-repeat: no-repeat;
 
 }
@@ -245,24 +245,23 @@ body {
 }
 
 .col-half {
-  /* position: relative; */
+  position: relative;
   width: 63%;
   display: flex;
   margin-left: 8px;
   background-image: url(/assets/Images/golf.png);
   background-repeat: no-repeat;
   background-position: right 0.1em bottom -3px;
+  z-index: -1;
 }
 
 .golf-title {
-  /* margin-top: 84%; */
   width: 410px;
-  /* margin-left: 7%; */
 }
 
 .golf-title .title {
   margin-top: 402px;
-  font-size: 80px;
+  font-size: 85px;
   font-weight: 700;
   height: 190px;
   line-height: 85px;
@@ -307,10 +306,10 @@ body {
 .golf_stick {
   width: 100%;
   position: absolute;
-  bottom: 0px;
-  right: 0;
+  bottom: 140px;
+  right: 254px;
   z-index: -1;
-  top: 175%;
+  
 }
 
 .Topgolf_logo_Text {
@@ -587,14 +586,14 @@ body {
     .join_logo {
       position: absolute;
       right: 10px;
-      top: -250px;
+      top: -150px;
       width: 250px;
       margin: 0;
     }
   }
 
   .BoothTime_text {
-    margin-top: -33%;
+    margin-top: -16%;
   }
 
   .BoothTime_text .h3 {
@@ -613,17 +612,23 @@ body {
 
   .Topgolf {
     width: 90%;
+    margin: 0 auto;
   }
 
   .col-half {
-    width: 40%;
+    width: 65%;
+    background-position: right 0.1em bottom -3px;
   }
 
   .golf-title {
     margin-left: 5%;
-    margin-top: 100%;
+    /* margin-top: 300px; */
   }
 
+  .golf-title .title
+  {
+    margin-top: 300px;
+  }
   .golf-title .li {
     font-size: 22px;
   }
@@ -639,13 +644,13 @@ body {
   }
 
   .golf_stick {
-    right: 58%;
-    top: 33%;
+    right: 37%;
+    top: 25%;
   }
 
   .TopGolf_Text_Form {
     width: 45%;
-    margin-left: 0;
+    margin-left: -100px;
   }
 
   .Topgolf_logo_Text {
@@ -664,7 +669,7 @@ body {
 
   .Form_Area {
     width: 100%;
-    min-height: 624px;
+    height: 640px;
   }
 
   .Form_Area .h3 {
@@ -681,7 +686,6 @@ body {
 
   .form .input {
     width: 90%;
-    height: 25px;
   }
 
   .form .submit {
@@ -818,6 +822,9 @@ body {
         flex-direction: column;
         align-items: center;
       }
+      .col-half {
+        width: 70%;
+    }
 
       .golf-title {
         .li {
@@ -871,8 +878,8 @@ body {
       }
 
       .golf_stick {
-        right: 316px;
-        top: 90px
+        right: 340px;
+        top: 366px
       }
 
       .golf-title .golf_logo {
@@ -883,6 +890,7 @@ body {
 
       .Form_Area {
         width: 100%;
+        height: 780px;
 
         .h3 {
           font-size: 60px;
@@ -993,6 +1001,23 @@ body {
   }
 }
 
+@media(max-width:900px)
+{
+  .main .group-2 .Topgolf
+  {
+    margin-left: 0px;
+  }
+}
+
+@media(max-width:800px)
+{
+  .main .group-2 .Topgolf
+  {
+    margin-left: 0px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .main {
     width: inherit;
@@ -1070,11 +1095,11 @@ body {
       }
 
       .col-half {
-        width: 60%;
+        width: 100%;
       }
 
       .golf-title {
-        margin-left: -133px;
+        margin-left: 0px;
         margin-top: 136px;
 
         .li {
@@ -1083,8 +1108,8 @@ body {
       }
 
       .golf_stick {
-        right: 358px;
-        top: 90px;
+        right: 246px;
+        top: 375px;
       }
 
       .golf-title .golf_logo {
@@ -1107,12 +1132,12 @@ body {
 
       .Topgolf_Downtimetext {
         margin-left: 0%;
-        font-size: 45px;
+        font-size: 40px;
       }
 
       .prosimo_Logo {
         margin-left: 0;
-        font-size: 80px;
+        font-size: 75px;
       }
 
       .Form_Area {
@@ -1217,9 +1242,21 @@ body {
 
 
   .main .group-2 .golf_stick {
-    right: 325px;
-    top: 219px;
+    right: 250px;
+    top: 380px;
+
   }
+
+  .main .group-2 .prosimo_Logo {
+    font-size: 65px;
+  }
+
+  .Packet_Pushers_Text .h4 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width:600px) {
 
   .main .group-2 .prosimo_Logo {
     font-size: 55px;
@@ -1322,14 +1359,13 @@ body {
       }
 
       .col-half {
-        width: 60%;
+        width: 100%;
         margin-left: 0;
       }
 
       .golf-title {
         width: 100%;
         z-index: 1;
-        margin-left: -60px;
         margin-top: 190px;
 
 
@@ -1351,8 +1387,8 @@ body {
       }
 
       .golf_stick {
-        right: 252px;
-        top: 161px;
+        right: 248px;
+        top: 350px;
       }
 
     }
@@ -1504,8 +1540,8 @@ body {
 
 
   .main .group-2 .golf_stick {
-    right: 200px;
-    top: 240px;
+    right: 245px;
+    top: 350px;
   }
 
   .main .group-2 .prosimo_Logo {
