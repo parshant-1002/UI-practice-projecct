@@ -31,6 +31,12 @@ body {
     scroll-behavior: smooth;
 }
 
+.info_hme , .info_pharma , .info_OP
+    {
+        display: none;
+        color: #0F0F0F;
+        font-size: 18px;
+    }
 
 body {
     background-color: white !important;
@@ -210,6 +216,9 @@ img {
 }
 
 .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 0px !important;
 }
 
