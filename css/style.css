@@ -1,0 +1,1862 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+:root {
+    --topbarColor: #0F2D5B;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Roboto";
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: white !important;
+    ;
+}
+
+img {
+    max-width: 100%;
+}
+
+.H-icon {
+    display: none;
+}
+
+/* Header starts  */
+
+.container-fluid {
+
+    width: 1128px !important;
+}
+
+/* Navbar  */
+.navbar {
+    background-color: var(--topbarColor) !important;
+    padding: 28px 0px !important;
+}
+
+.navbar .logo {
+    width: 109px;
+    height: 53px;
+    flex-shrink: 0;
+    justify-self: start;
+    margin-right: 40px;
+    margin: 10px 0px;
+
+}
+
+.navbar .menu {
+
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 0px !important;
+}
+
+.menu .menu-items {
+    list-style: none;
+    color: var(--White, #FFF);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+}
+
+.menu-items .fa {
+    padding-left: 10px;
+}
+
+.nav {
+    width: 80%;
+}
+
+.navbar .loginButton {
+    display: flexbox;
+    justify-content: center;
+    padding: 12px 16px 12px 16px;
+    gap: 8px;
+    background-color: var(--topbarColor);
+    text-align: center;
+    margin: 8px 0px;
+    border: 2px solid var(--blue-100, #F7FAFC);
+}
+
+.help-div {
+    display: flex;
+    padding: 48px 0px 40px 0px;
+    gap: 89px;
+    flex-wrap: unset !important;
+    /* z-index: -1; */
+    background: linear-gradient(var(--topbarColor) 80%, #EFFAFF 20%)
+}
+
+
+.hero {
+    /* background-image: url(/assets/images/image\ 7\ \(2\).png);
+    background-size: 50% ;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1; */
+    background: linear-gradient(var(--topbarColor) 80%, #EFFAFF 20%);
+}
+
+.help-div .content {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.text_SB {
+    gap: 16px;
+}
+
+.content .StreamlineText {
+    color: var(--White, #FFF);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 56px;
+
+    letter-spacing: 1px;
+}
+
+.content .BrightreeText {
+    color: var(--White, #FFF);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.talkwithusbutton {
+    width: 204px !important;
+    display: flex;
+    padding-left: 0px !important;
+    align-items: center;
+    gap: 24px;
+    border: none;
+    margin-bottom: 80px;
+}
+
+.talkwithusbutton p {
+    width: 100px;
+    height: 32px;
+    color: var(--grey-900, #0F0F0F);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.44px;
+}
+
+.chat-Button {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--orange-700, #F26522);
+}
+
+.image-7div img {
+    max-height: 500px;
+}
+
+
+.card-div {
+    padding: 0px !important;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+}
+
+.card {
+    padding: 32px 32px;
+    align-items: flex-start;
+    margin-left: 0px !important;
+    gap: 32px;
+    box-shadow: 5px 0px 0px 0px #0F2D5B inset;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.card-body {
+    padding: 0px !important;
+}
+
+.card-body a {
+    width: 70%;
+    padding-left: 0px !important;
+}
+
+.card img {
+    width: 23px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.card-text {
+    color: var(--grey-500, #79797A);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text {
+    height: 48px;
+}
+
+.products {
+    display: flex;
+    padding: 0px 0px 80px 0px;
+    flex-direction: column;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.title-products {
+    display: flex;
+    color: var(--grey-700, #424243);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+}
+
+.title-grow {
+    color: var(--grey-700, #424243);
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.para-product {
+    color: var(--grey-500, #79797A);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.HME {
+
+    flex-wrap: unset !important;
+    gap: 120px;
+    padding: 96px 0px 80px 0px;
+}
+
+.col-lg-6 {
+    width: 60% !important;
+}
+
+.image-12div {
+    position: relative;
+
+}
+
+.img {
+    width: 64px !important;
+    height: 64px;
+    padding: 12px 17.003px 12px 17px;
+}
+
+.secure {
+    gap: 24px;
+}
+
+.titleH3 {
+    color: var(--grey-700, #424243);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0.84px;
+    padding-right: 0px !important;
+}
+
+.paraMain {
+    color: var(--grey-500, #79797A);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.arrow-Button {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--blue-500, #009BDF);
+}
+
+.btn-arrow-text {
+    width: 80%;
+    display: flex;
+    padding-left: 0px !important;
+    align-items: center;
+    gap: 24px;
+    color: black;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.34px;
+    border: 2px solid #009BDF;
+    background-color: white;
+}
+
+.card-connected {
+    height: unset !important;
+    gap: 8px;
+    align-self: stretch;
+    box-shadow: none;
+    background: var(--White, #FFF);
+    border: none !important;
+    box-shadow: 2px 0px 0px 0px #C2C2C4 inset;
+    border-radius: 0px !important;
+}
+
+.sub-title {
+    height: 32px;
+    color: var(--grey-700, #424243);
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.card-para {
+    align-self: stretch;
+    color: var(--grey-500, #79797A);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card-connected {
+    padding: 8px 0px 8px 32px !important;
+}
+
+.frame213 {
+    width: 50% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.quote,
+.OP-card {
+    flex-wrap: unset !important;
+    width: 100%;
+    padding: 32px 80px 32px 32px;
+    align-items: flex-start;
+    gap: 24px;
+    background: var(--White, #FFF);
+    flex-direction: row !important;
+    border: none !important;
+    margin-left: 0px !important;
+    box-shadow: 2px 0px 0px 0px #0F2D5B inset;
+    border-radius: 0px !important;
+}
+
+.pharmacy {
+    display: flex;
+    padding: 80px 0px;
+    gap: 16px;
+    margin-right: 0px;
+    flex-wrap: unset !important;
+
+}
+
+.quote img,
+.OP-card img {
+    width: 89px;
+    height: 60px;
+}
+
+.quote .card-body,
+.OP-card .card-body {
+    margin-left: 0px;
+}
+
+.quote-text {
+    margin-bottom: 0px;
+}
+
+.quote .card-title,
+.OP-card .card-title {
+    color: var(--grey-700, #424243);
+    height: 16px !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 0px;
+}
+
+.card-body small,
+.OP-card span,
+.small {
+    color: var(--grey-500, #79797A);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    height: 16px;
+}
+
+.microSoftTeamsImage {
+    width: 50% !important;
+}
+
+
+.O_P {
+    display: flex;
+    padding: 80px 0px;
+    flex-wrap: unset !important;
+    gap: 100px;
+}
+
+.frame {
+    display: flex;
+    gap: 32px;
+    padding-right: 20px;
+}
+
+.frame157 {
+    flex-direction: column;
+    gap: 24px;
+}
+
+.frame157 .titleH3 {
+    height: 144px !important;
+}
+
+.frame157 .btn-arrow-text {
+    width: 456px;
+}
+
+.image8-div img {
+    width: 570px;
+}
+
+.frame232 {
+    width: 50% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.OP-card {
+    border: none;
+    box-shadow: none;
+    height: unset !important;
+    margin-left: 0px !important;
+}
+
+.Testimonials {
+    display: flex;
+    padding: 80px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.header {
+    width: 934px;
+    color: var(--grey-700, #424243);
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+.header h4 {
+    margin-bottom: 20px !important;
+}
+
+.text_link {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.text_link p {
+    color: var(--grey-500, #79797A);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text_link a {
+    color: var(--blue-500, #009BDF);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+
+
+
+.testimonials-content {
+    width: 50%;
+    /* height: 320px !important; */
+    padding: 32px 64px 56px 32px;
+    border: none !important;
+    gap: 24px;
+    box-shadow: none;
+    justify-content: space-between;
+}
+
+.display {
+    gap: 24px;
+    height: 48px;
+}
+
+.display img {
+    width: 89px;
+    height: 60px;
+}
+
+.display h5 {
+    color: var(--grey-700, #424243);
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.testimonials-content .card-text {
+    width: 90%;
+    color: var(--grey-500, #79797A);
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.closer {
+    padding: 80px 0px;
+}
+
+.footer {
+    height: 424px;
+    padding: 80px 0px 160px 0px;
+    gap: 121px;
+    flex-shrink: 0;
+}
+
+.links {
+    width: 80%;
+    gap: 80px;
+    flex-direction: row;
+}
+
+.product_Links {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product_Links h6 {
+    color: var(--grey-700, #424243);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.product_Links img {
+    width: 10.667px;
+    height: 5.333px;
+    flex-shrink: 0;
+}
+
+.arrow-link-div {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.community,
+.about,
+.contact_us {
+    width: 35%;
+}
+
+.community h6,
+.about h6,
+.contact_us h6 {
+    color: var(--grey-500, #79797A);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
+    list-style: none;
+    padding-left: 12px;
+}
+
+
+.product_Links h4,
+.community h4,
+.about h4,
+.contact_us h4 {
+    height: 40px;
+    display: flex;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--grey-700, #424243);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+}
+
+.logo_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.b_logo {
+    width: 109px;
+    height: 53px;
+}
+
+.b_text {
+    width: 167px;
+    color: var(--grey-500, #79797A);
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.hiring {
+
+    gap: 24px;
+}
+
+.logo_hiring {
+
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--topbarColor);
+}
+
+.h_logo {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.hiring h3 {
+    color: var(--grey-700, #424243);
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.graph-pic {
+    height: 496px;
+    background-image: url(/assets/images/Graphic_\ Chart.png);
+    background-color: var(--topbarColor);
+    padding: 99px 119px 88px 80px !important;
+    margin-left: -10px;
+    background-size: 100%;
+}
+
+.BrightAction {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.BrightAction p {
+    color: var(--White, #FFF);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: 1px;
+}
+
+.imageGirl {
+    background-image: url(/assets/images/image\ 7\ \(1\).png);
+}
+
+.b-button {
+    width: 482px !important;
+    border: none;
+    display: flex;
+    padding-right: 0px;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.b-button p {
+    text-align: center;
+    width: 324px;
+    height: 32px;
+    color: #0F0F0F;
+    margin-bottom: 0px !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.44px;
+}
+
+.b-button p small {
+    color: var(--grey-700, #424243);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.44px;
+}
+
+.girlPic {
+    display: none;
+}
+
+.BrightAction span {
+    color: var(--White, #FFF);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.microsoft {
+    display: none;
+}
+
+@media(max-width: 1024px) {
+
+    .container-fluid {
+        width: 100% !important;
+    }
+
+    .help-div {
+        width: 100%;
+        padding: 32px 16px 16px 16px;
+        gap: 48px;
+    }
+
+    .navbar .menu {
+        margin-right: -50px;
+        gap: 20px
+    }
+
+
+    .content .StreamlineText {
+        font-size: 31px;
+        line-height: 40px;
+    }
+
+    .content .BrightreeText {
+        font-size: 18px;
+    }
+
+    .talkwithusbutton {
+        width: 100%;
+    }
+
+    .products {
+        padding: 32px 16px 32px 16px;
+    }
+
+    .text-row-products {
+        margin-left: 0px;
+    }
+
+    .title-grow {
+        width: 100%;
+        color: var(--grey-700, #424243);
+
+        font-size: 22px;
+        font-style: normal;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+
+    .title-products {
+        width: 100%;
+    }
+
+    .Testimonials {
+        align-items: flex-start;
+    }
+
+    .para-product {
+        width: 100% !important;
+    }
+
+    .card {
+        padding: 16px 24px 16px 24px;
+        gap: 16px;
+    }
+
+    .frame213 {
+        width: 40% !important;
+        gap: 16px;
+    }
+
+    .quote,
+    .OP-card {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 0px !important;
+    }
+
+    .card-text {
+        font-size: 16px;
+        margin-bottom: 0px !important;
+    }
+
+    .HME {
+        padding: 32px 16px;
+        gap: 24px;
+    }
+
+    .frame {
+        flex-direction: column;
+        gap: 40px
+    }
+
+    .secure {
+        width: unset;
+    }
+
+    .titleH3 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .paraMain {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .card-connected {
+        padding: 8px 0px 8px 8px;
+    }
+
+    .card-body {
+        width: 80% !important;
+    }
+
+    .sub-title {
+        height: unset;
+        font-size: 18;
+    }
+
+    .btn-arrow-text {
+        width: 100% !important;
+    }
+
+    .pharmacy {
+        padding: 32px 16px;
+    }
+
+    .card-para {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .image-12div {
+        right: 0px;
+    }
+
+    .quote,
+    .OP-card {
+        padding: 16px;
+        flex-wrap: unset !important;
+        gap: 16px
+    }
+
+    .quote-text,
+    .OP-card .card-text {
+        width: 100% !important;
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 0px !important;
+    }
+
+    .card-body small,
+    .OP-card span {
+        display: block;
+        width: 100%;
+    }
+
+    .O_P {
+        padding: 32px 16px;
+        gap: 120px;
+    }
+
+    .frame157 .titleH3 {
+        height: unset !important;
+    }
+
+    .OP-card {
+        padding: 16px;
+        gap: 24px;
+    }
+
+    .Testimonials {
+        padding: 32px 10px;
+        gap: 32px;
+    }
+
+    .testimonials-content .card-text {
+        font-size: 18px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header h4 {
+        font-size: 22px;
+    }
+
+    .text_link {
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .testimonials-content {
+        height: 320px !important;
+    }
+
+    .closer {
+        padding: 0;
+    }
+
+    .BrightAction {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .BrightAction p {
+        font-size: 31px;
+    }
+
+    .graph-pic {
+        padding: 88px 50px 38px 50px !important;
+        background-size: unset;
+    }
+
+    .b-button p {
+
+        font-size: 16px;
+    }
+
+    .BrightAction span {
+        font-size: 18px;
+    }
+
+    .b-button p small {
+        display: none;
+    }
+
+    .b-button {
+        width: 80% !important;
+    }
+
+    .footer {
+        padding: 32px 10px;
+        gap: 24px;
+    }
+
+    .b_text {
+        width: 100%;
+    }
+
+    .links {
+        gap: 24px;
+    }
+}
+
+@media(max-width: 991px) {
+
+    .container-fluid {
+        width: 100% !important;
+    }
+
+    .navbar .menu {
+        gap: 10px
+    }
+
+    .help-div {
+        width: 100%;
+        padding: 32px 16px 16px 16px;
+        gap: 48px;
+    }
+
+    .content .StreamlineText {
+        font-size: 31px;
+        line-height: 40px;
+    }
+
+    .content .BrightreeText {
+        font-size: 18px;
+    }
+
+    .talkwithusbutton {
+        width: 100%;
+    }
+
+    .products {
+        padding: 32px 16px 32px 16px;
+    }
+
+    .text-row-products {
+        margin-left: 0px;
+    }
+
+    .title-grow {
+        width: 100%;
+        color: var(--grey-700, #424243);
+
+        font-size: 22px;
+        font-style: normal;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+
+    .title-products {
+        width: 100%;
+    }
+
+    .Testimonials {
+        align-items: flex-start;
+    }
+
+    .para-product {
+        width: 100% !important;
+    }
+
+    .card-div {
+        gap: 20px;
+    }
+
+    .card {
+        padding: 16px 24px 16px 16px;
+        gap: 16px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 10px !important;
+    }
+
+    .card-text {
+        margin-bottom: 10px !important;
+    }
+
+    .HME {
+        padding: 32px 16px;
+        gap: 24px;
+    }
+
+    .col-lg-5 {
+        width: 40.666667% !important;
+    }
+
+    .secure {
+        gap: 16px;
+    }
+
+    .titleH3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .paraMain {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .card-connected {
+        padding: 8px 0px 8px 16px;
+        margin-left: 0px !important;
+    }
+
+    .card-body {
+        width: 80% !important;
+    }
+
+    .sub-title {
+        height: unset;
+        font-size: 18;
+    }
+
+    .btn-arrow-text {
+        width: 100% !important;
+    }
+
+    .pharmacy {
+        padding: 32px 16px;
+    }
+
+    .card-para {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .image-12div {
+        right: 0px;
+    }
+
+    .quote,
+    .OP-card {
+        padding: 16px;
+        flex-wrap: unset !important;
+        gap: 16px
+    }
+
+    .quote-text,
+    .OP-card .card-text {
+        width: 100% !important;
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 0px !important;
+    }
+
+    .card-body small,
+    .OP-card span {
+        display: block;
+        width: 100%;
+    }
+
+    .O_P {
+        padding: 32px 16px;
+        gap: 90px;
+        ;
+    }
+
+    .frame157 .titleH3 {
+        height: unset !important;
+    }
+
+    .OP-card {
+        padding: 16px;
+        gap: 24px;
+    }
+
+    .Testimonials {
+        padding: 32px 10px;
+        gap: 32px;
+    }
+
+    .testimonials-content .card-text {
+        font-size: 18px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header h4 {
+        font-size: 22px;
+    }
+
+    .text_link {
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .testimonials-content {
+        height: 320px !important;
+    }
+
+    .closer {
+        padding: 0;
+    }
+
+    .BrightAction {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .BrightAction p {
+        font-size: 31px;
+    }
+
+    .graph-pic {
+        padding: 24px 40px !important;
+    }
+
+    .b-button p {
+
+        font-size: 16px;
+    }
+
+    .BrightAction span {
+        font-size: 18px;
+    }
+
+    .b-button p small {
+        display: none;
+    }
+
+    .b-button {
+        width: 80% !important;
+    }
+
+    .footer {
+        padding: 32px 10px;
+        gap: 24px;
+    }
+
+    .b_text {
+        width: 100%;
+    }
+
+    .links {
+        gap: 24px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .container-fluid {
+        width: 100% !important;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none !important;
+    }
+
+    .H-icon {
+        display: block;
+        padding: 12px 16px;
+        border: 2px solid var(--blue-100, #F7FAFC);
+    }
+
+    .help-div .content {
+        width: 100%;
+    }
+
+    .help-div {
+        width: 100%;
+        padding: 32px 16px 16px 16px;
+        gap: 48px;
+    }
+
+    .content .StreamlineText {
+        font-size: 31px;
+        line-height: 40px;
+    }
+
+    .content .BrightreeText {
+        font-size: 18px;
+    }
+
+    .talkwithusbutton {
+        width: 100%;
+    }
+
+    .products {
+        padding: 32px 16px 32px 16px;
+    }
+
+    .text-row-products {
+        margin-left: 0px;
+    }
+
+    .title-grow {
+        width: 100%;
+
+        font-size: 40px;
+        line-height: 40px;
+
+    }
+
+    .title-products {
+        width: 100%;
+    }
+
+    s .Testimonials {
+        align-items: flex-start;
+    }
+
+    .para-product {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .card {
+        height: 180px !important;
+        padding: 16px 24px 16px 32px;
+        gap: 16px;
+    }
+
+    .frame213 {
+        width: 100% !important;
+
+    }
+
+    .card-title {
+        font-size: 32px;
+        margin-bottom: 20px !important;
+    }
+
+    .card-text {
+        font-size: 26px;
+        margin-bottom: 10px !important;
+    }
+
+    .card-body .btn {
+        font-size: 20px;
+    }
+
+    .HME {
+        padding: 32px 16px;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .col-lg-5 {
+        width: unset !important;
+    }
+
+    .titleH3 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .paraMain {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .card-connected {
+        padding: 8px 0px 8px 16px;
+        height: 140px !important;
+    }
+
+    .card-body {
+        width: 80% !important;
+    }
+
+    .sub-title {
+        font-size: 24px;
+        margin-bottom: 10px !important;
+    }
+
+    .btn-arrow-text {
+        width: 80% !important;
+    }
+
+    .pharmacy {
+        padding: 32px 16px;
+    }
+
+    .card-para {
+        font-size: 24px;
+    }
+
+    .microsoft {
+        display: block;
+    }
+
+    .col-lg-6 {
+        width: 100% !important;
+    }
+
+    .microSoftTeamsImage {
+        display: none !important;
+    }
+
+    .quote,
+    .OP-card {
+        width: 80% !important;
+        padding: 16px 0px 16px 0px;
+        flex-direction: column;
+        flex-wrap: unset !important;
+        gap: 16px
+    }
+
+    .quote-text,
+    .OP-card .card-text {
+        width: 100% !important;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0px !important;
+    }
+
+    .card-body small,
+    .OP-card span {
+        display: block;
+        width: 100%;
+    }
+
+    .O_P {
+        padding: 32px 16px;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .frame157 .titleH3 {
+        height: unset !important;
+    }
+
+    .frame242 {
+        flex-direction: column;
+    }
+
+    .OP-card {
+        gap: 24px;
+    }
+
+    .Testimonials {
+        padding: 32px 10px;
+        gap: 32px;
+    }
+
+    .testimonials-content .card-text {
+        font-size: 18px;
+        height: unset !important;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header h4 {
+        font-size: 22px;
+    }
+
+    .text_link {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .testimonials-content {
+        width: 100%;
+    }
+
+    .BrightAction {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .BrightAction p {
+        font-size: 50px;
+    }
+
+    .imageGirl {
+        background: none;
+    }
+
+    .graph-pic {
+        padding: 80px 40px !important;
+    }
+
+    .girlPic {
+        width: 100%;
+        display: block;
+    }
+
+    .b-button p {
+
+        font-size: 16px;
+    }
+
+    .BrightAction span {
+        font-size: 30px;
+    }
+
+    .b-button p small {
+        display: none;
+    }
+
+    .b-button {
+        width: 80% !important;
+    }
+
+    .footer {
+        padding: 32px 10px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .b_text {
+        width: 100%;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .col-4 {
+        padding: 0px !important;
+    }
+
+    .col-8,
+    .col-4 {
+        width: 100% !important;
+    }
+}
+
+@media(max-width:576px) {
+
+    .container-fluid {
+        width: 100% !important;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .navbar .menu,
+    .navbar .loginButton {
+        display: none;
+    }
+
+    .help-div {
+        width: 100%;
+        padding: 32px 16px 16px 16px;
+        gap: 48px;
+    }
+
+    .content .StreamlineText {
+        font-size: 31px;
+        line-height: 40px;
+    }
+
+    .content .BrightreeText {
+        font-size: 18px;
+    }
+
+    .talkwithusbutton {
+        width: 100%;
+    }
+
+    .products {
+        padding: 32px 16px 32px 16px;
+
+    }
+
+    .text-row-products {
+        margin-left: 0px;
+    }
+
+
+    .microsoft {
+        display: none;
+    }
+
+    .title-grow {
+        width: 100%;
+        color: var(--grey-700, #424243);
+
+        font-size: 22px;
+        font-style: normal;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+
+    .title-products {
+        width: 100%;
+    }
+
+    .Testimonials {
+        align-items: flex-start;
+    }
+
+    .para-product {
+        width: 100% !important;
+    }
+
+    .card {
+        padding: 16px 24px 16px 32px;
+        gap: 16px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 10px !important;
+    }
+
+    .card-text {
+        margin-bottom: 10px !important;
+    }
+
+    .HME {
+        padding: 32px 16px;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+
+    .secure {
+        width: unset;
+    }
+
+    .titleH3 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .paraMain {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .card-connected {
+        padding: 8px 0px 8px 16px;
+        height: 140px !important;
+    }
+
+    .card-body {
+        width: 80% !important;
+    }
+
+    .sub-title {
+        height: unset;
+        font-size: 18;
+    }
+
+    .btn-arrow-text {
+        width: 100% !important;
+    }
+
+    .pharmacy {
+        padding: 32px 16px;
+    }
+
+    .card-para {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .image-12div {
+        right: 0px;
+    }
+
+    .microSoftTeamsImage {
+        display: none !important;
+    }
+
+    .quote,
+    .OP-card {
+        padding: 16px 0px 16px 0px;
+        width: 100% !important;
+        flex-direction: column;
+        flex-wrap: unset !important;
+        gap: 16px
+    }
+
+    .quote-text,
+    .OP-card .card-text {
+        width: 100% !important;
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 0px !important;
+    }
+
+    .card-body small,
+    .OP-card span {
+        display: block;
+        width: 100%;
+    }
+
+    .O_P {
+        padding: 32px 16px;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .frame157 .titleH3 {
+        height: unset !important;
+    }
+
+    .frame242 {
+        flex-direction: column;
+    }
+
+    .Testimonials {
+        padding: 32px 10px;
+        gap: 32px;
+    }
+
+    .testimonials-content .card-text {
+        font-size: 18px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header h4 {
+        font-size: 22px;
+    }
+
+    .text_link {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .testimonials-content {
+        height: 320px !important;
+    }
+
+    .closer {
+        padding: 0;
+    }
+
+    .BrightAction {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .BrightAction p {
+        font-size: 31px;
+    }
+
+    .imageGirl {
+        background: none;
+    }
+
+    .graph-pic {
+        padding: 24px 40px !important;
+        background-size: unset !important;
+        margin-left: 0px !important;
+    }
+
+    .girlPic {
+        width: 100%;
+        display: block;
+    }
+
+    .b-button p {
+
+        font-size: 16px;
+    }
+
+    .BrightAction span {
+        font-size: 18px;
+    }
+
+    .b-button p small {
+        display: none;
+    }
+
+    .b-button {
+        width: 80% !important;
+    }
+
+    .footer {
+        padding: 32px 10px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .b_text {
+        width: 100%;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .col-8,
+    .col-4 {
+        width: 100% !important;
+    }
+}
