@@ -31,12 +31,13 @@ body {
     scroll-behavior: smooth;
 }
 
-.info_hme , .info_pharma , .info_OP
-    {
-        display: none;
-        color: #0F0F0F;
-        font-size: 18px;
-    }
+.info_hme,
+.info_pharma,
+.info_OP {
+    display: none;
+    color: #0F0F0F;
+    font-size: 18px;
+}
 
 body {
     background-color: white !important;
@@ -55,10 +56,9 @@ img {
 
 .container-fluid {
 
-    width: 1128px !important;
+    max-width: 1128px !important;
 }
 
-/* Navbar  */
 .navbar {
     background-color: var(--topbarColor) !important;
     padding: 28px 0px !important;
@@ -74,6 +74,22 @@ img {
 
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+}
+
+.nav-item .fa {
+    font-size: 18px;
+    color: red;
+    padding-left: 10px;
+}
+
+.form-select {
+    color: white;
+    background: none;
+    border: none;
+}
+
 .navbar .menu {
 
     display: flex;
@@ -81,26 +97,23 @@ img {
     align-items: center;
     gap: 30px;
     margin-bottom: 0px !important;
+    color: white;
 }
 
-.menu .menu-items {
-    list-style: none;
-    color: var(--White, #FFF);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px;
+.nav-item {
+    color: white;
+}
 
-    letter-spacing: 0.28px;
-    text-transform: uppercase;
+.navbar-toggler {
+    border: 2px solid white;
 }
 
 .menu-items .fa {
     padding-left: 10px;
 }
 
-.nav {
-    width: 80%;
+.navbar-collapse {
+    margin-left: 30px;
 }
 
 .navbar .loginButton {
@@ -119,18 +132,23 @@ img {
     padding: 48px 0px 40px 0px;
     gap: 89px;
     flex-wrap: unset !important;
-    /* z-index: -1; */
-    background: linear-gradient(var(--topbarColor) 80%, #EFFAFF 20%)
+    z-index: -1;
 }
 
+header {
+    background-color: #0F2D5B;
+}
+
+.hero:before {
+    content: url(/assets/images/image7.png);
+    position: absolute;
+    top: 184px;
+    right: 0;
+    height: 488px;
+}
 
 .hero {
-    /* background-image: url(/assets/images/image\ 7\ \(2\).png);
-    background-size: 50% ;
-    background-repeat: no-repeat;
-    background-position: right;
-    z-index: 1; */
-    background: linear-gradient(var(--topbarColor) 80%, #EFFAFF 20%);
+    background: linear-gradient(var(--topbarColor) 90%, #EFFAFF 10%);
 }
 
 .help-div .content {
@@ -138,11 +156,15 @@ img {
     width: 45%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 16px;
 }
 
 .text_SB {
     gap: 16px;
+}
+
+.content-card {
+    gap: 8px;
 }
 
 .content .StreamlineText {
@@ -188,14 +210,31 @@ img {
     display: flex;
     padding: 16px;
     align-items: flex-start;
-    gap: 10px;
     background: var(--orange-700, #F26522);
+}
+
+.image-7div {
+    display: none;
+}
+
+.btnL_M {
+    width: 50%;
+    padding: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
 }
 
 .image-7div img {
     max-height: 500px;
 }
 
+.btn .fa {
+    font-size: 22px;
+}
 
 .card-div {
     padding: 0px !important;
@@ -203,6 +242,11 @@ img {
     align-items: center;
     gap: 40px;
     flex-shrink: 0;
+}
+
+.tags-div {
+    padding: 0px;
+    gap: 16px;
 }
 
 .card {
@@ -228,10 +272,13 @@ img {
 }
 
 .card img {
+    margin-top: 10px;
     width: 23px;
 }
 
 .card-title {
+    color: #000;
+    width: 90%;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -251,15 +298,19 @@ img {
 }
 
 .products {
-    display: flex;
-    padding: 0px 0px 80px 0px;
+    padding: 96px 0px 80px 0px;
     flex-direction: column;
     gap: 16px;
     flex-shrink: 0;
 }
 
+.product-tag {
+    padding: 7px 8px 5px 8px;
+    width: fit-content;
+    background-color: white;
+}
+
 .title-products {
-    display: flex;
     color: var(--grey-700, #424243);
     font-size: 15px;
     font-style: normal;
@@ -277,7 +328,16 @@ img {
     letter-spacing: 2px;
 }
 
+.Hme_section {
+
+    background-image: url(/assets/images/image12.png);
+    background-size: 50%;
+    background-position: right top 98px;
+    background-repeat: no-repeat;
+}
+
 .para-product {
+    width: 65%;
     color: var(--grey-500, #79797A);
     font-size: 18px;
     font-style: normal;
@@ -290,15 +350,6 @@ img {
     flex-wrap: unset !important;
     gap: 120px;
     padding: 96px 0px 80px 0px;
-}
-
-.col-lg-6 {
-    width: 60% !important;
-}
-
-.image-12div {
-    position: relative;
-
 }
 
 .img {
@@ -423,18 +474,21 @@ img {
 
 .quote img,
 .OP-card img {
-    width: 89px;
-    height: 60px;
+    width: 48px;
+    padding: 0px;
 }
 
 .quote .card-body,
 .OP-card .card-body {
     margin-left: 0px;
+    gap: 8px;
 }
 
 .quote-text {
     margin-bottom: 0px;
 }
+
+
 
 .quote .card-title,
 .OP-card .card-title {
@@ -474,6 +528,10 @@ img {
     display: flex;
     gap: 32px;
     padding-right: 20px;
+}
+
+.frame .btn-arrow-text {
+    width: 100%;
 }
 
 .frame157 {
@@ -561,7 +619,6 @@ img {
 
 .testimonials-content {
     width: 50%;
-    /* height: 320px !important; */
     padding: 32px 64px 56px 32px;
     border: none !important;
     gap: 24px;
@@ -571,12 +628,12 @@ img {
 
 .display {
     gap: 24px;
-    height: 48px;
 }
 
 .display img {
-    width: 89px;
-    height: 60px;
+    width: 48px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .display h5 {
@@ -804,6 +861,10 @@ img {
     letter-spacing: 0.44px;
 }
 
+.image-12div {
+    display: none;
+}
+
 .girlPic {
     display: none;
 }
@@ -830,6 +891,15 @@ img {
         width: 100%;
         padding: 32px 16px 16px 16px;
         gap: 48px;
+    }
+
+    .image-7div,
+    .image-12div {
+        display: block;
+    }
+
+    .hero:before {
+        content: unset;
     }
 
     .navbar .menu {
@@ -912,13 +982,13 @@ img {
         gap: 24px;
     }
 
+    .Hme_section {
+        background: none;
+    }
+
     .frame {
         flex-direction: column;
         gap: 40px
-    }
-
-    .secure {
-        width: unset;
     }
 
     .titleH3 {
@@ -1352,7 +1422,7 @@ img {
     }
 
     .talkwithusbutton {
-        width: 100%;
+        width: 100% !important;
     }
 
     .products {
@@ -1385,7 +1455,6 @@ img {
     }
 
     .card {
-        height: 180px !important;
         padding: 16px 24px 16px 32px;
         gap: 16px;
     }

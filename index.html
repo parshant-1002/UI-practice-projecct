@@ -9,32 +9,34 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 </head>
 
 <body>
-    <header style=" background:  #0F2D5B;">
+    <header>
         <div class="container-fluid">
-            <nav class="navbar">
-                <img src="/assets/images/brightree-logo.svg" alt=" logo" srcset="" class="logo">
-                <div class="d-flex justify-content-between nav">
-                    <ul class=" menu">
-                        <li class="menu-items d-flex"> Product & Services <i class="fa fa-angle-down"
-                                style="font-size:13px ; color: red;"></i>
+            <nav class="navbar navbar-expand-lg">
+                <img src="/assets/images/brightree-logo.svg" alt=" logo" srcset="" class="logo navbar-brand">
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="" role="button"><i class="fa fa-bars" aria-hidden="true"
+                            style="color:#e6e6ff"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="menu navbar-nav">
+                        <li class="nav-item nav-link"> Product & Services <i class="fa fa-angle-down"></i>
                         </li>
-                        <li class="menu-items"> Resources </li>
-                        <li class="menu-items"> About </li>
-                        <li class="menu-items"> Blog </li>
-                        <li class="menu-items"> Contact </li>
-                        <li class="menu-items"> <img src="/assets/images/Search.svg" alt="" srcset="" class="search">
+                        <li class="nav-item nav-link "> Resources </li>
+                        <li class="nav-item nav-link "> About </li>
+                        <li class="nav-item nav-link "> Blog </li>
+                        <li class="nav-item nav-link "> Contact </li>
+                        <li class="nav-item nav-link"> <img src="/assets/images/Search.svg" alt="" srcset=""
+                                class="search">
                         </li>
                     </ul>
-                    <button type="button" class="loginButton d-flex justify-content-center"> <img
+                    <button type="button" class="loginButton d-flex justify-content-center navbar-nav ms-auto"> <img
                             src="/assets/images/Login.svg" alt="" srcset="" class=" login"> Log in</button>
-                </div>
-
-                <div class="H-icon" id="Ham-icon">
-                    <i class="fa fa-bars" style="font-size:24px"></i>
                 </div>
             </nav>
         </div>
@@ -45,6 +47,7 @@
             <div class="row help-div">
                 <div class="col-lg-5 content">
                     <div class="text_SB d-flex flex-column">
+
                         <h1 class=" StreamlineText">
                             Streamline, increase revenue and improve patient care
                         </h1>
@@ -62,7 +65,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="image-7div">
-                        <img src="/assets/images/image 7 (2).png" alt="" srcset="">
+                        <img src="/assets/images/image7.png" alt="" srcset="">
                     </div>
                 </div>
             </div>
@@ -71,56 +74,67 @@
     <section style="background: var(--blue-300, #EFFAFF);">
         <div class="container-fluid">
             <div class="row products">
-                <h5 class="col-12 title-products"> Products </h5>
-                <h4 class="col-9 title-grow">
-                    The patient care platform that grows with you.
-                </h4>
-                <p class="col-9  para-product">
-                    Start with the basics and go bigger when your HME or pharmacy business demands it. Brightree
-                    is customizable to meet your needs—now and in the future.
-                </p>
+                <div class="col-12 d-flex flex-column tags-div">
+
+                    <div class="product-tag">
+
+                        <h5 class="title-products product-tag"> Products </h5>
+                    </div>
+                    <h4 class="title-grow">
+                        The patient care platform that grows with you.
+                    </h4>
+                    <p class=" para-product">
+                        Start with the basics and go bigger when your HME or pharmacy business demands it. Brightree
+                        is customizable to meet your needs—now and in the future.
+                    </p>
+                </div>
                 <div class="row card-div">
                     <div class="col">
                         <div class="card flex-row">
-                            <img src="/assets/images/HME.svg" class="card-img-top" alt="...">
+                            <img src="/assets/images/HME.svg" class="card-img-top col" alt="...">
                             <div class="card-body col">
-                                <h5 class="card-title">HME(DME) Software</h5>
-                                <p class="card-text text">Improves your workflow to reduce your workload..</p>
-                                <div class="info_hme" id="info_hme">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                <div class="d-flex flex-column content-card">
+                                    <h5 class="card-title">HME(DME) Software</h5>
+                                    <p class="card-text text">Improves your workflow to reduce your workload..</p>
+                                    <div class="info_hme" id="info_hme">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </div>
                                 </div>
-                                <button href="#" class="btn d-flex justify-content-between"> Learn More <i
-                                        class="fa fa-angle-down" id="iHme"
-                                        style="font-size:24px; color: blue;"></i></button>
+                                <button href="#" class="btn d-flex justify-content-between btnL_M"> Learn More <i
+                                        class="fa fa-angle-down" id="iHme" style=" color: blue;"></i></button>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card flex-row">
-                            <img src="/assets/images/Pharmacy.svg" class="card-img-top" alt="...">
+                            <img src="/assets/images/Pharmacy.svg" class="card-img-top col" alt="...">
                             <div class="card-body col">
-                                <h5 class="card-title">Pharmacy Software</h5>
-                                <p class="card-text text">Utilise one system to manage your pharmacy.</p>
-                                <div class="info_pharma" id="info_pharma">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                <div class="d-flex flex-column content-card">
+                                    <h5 class="card-title">Pharmacy Software</h5>
+                                    <p class="card-text text">Utilise one system to manage your pharmacy.</p>
+                                    <div class="info_pharma" id="info_pharma">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </div>
                                 </div>
-                                <button id="ipharma" class="btn d-flex justify-content-between">Go somewhere <i
-                                        class="fa fa-angle-down" style="font-size:24px  ; color: blue;"></i></button>
+                                <button id="ipharma" class="btn d-flex justify-content-between btnL_M"> Learn More <i
+                                        class="fa fa-angle-down" style="color: blue;"></i></button>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card  flex-row">
-                            <img src="/assets/images/O&P.svg" class="card-img-top" alt="...">
+                            <img src="/assets/images/O&P.svg" class="card-img-top col" alt="...">
                             <div class="card-body col">
-                                <h5 class="card-title">Orthotics& ProstheticSoftware</h5>
-                                <p class="card-text text">Gain a holistic view
-                                    of your business.</p>
-                                <div class="info_OP" id="info_OP">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                <div class="d-flex flex-column content-card">
+                                    <h5 class="card-title">Orthotics& ProstheticSoftware</h5>
+                                    <p class="card-text text">Gain a holistic view
+                                        of your business.</p>
+                                    <div class="info_OP" id="info_OP">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </div>
                                 </div>
-                                <button href="#" id="iO&P" class="btn d-flex justify-content-between"> Learn More <i
-                                        class="fa fa-angle-down" style="font-size:24px ; color: blue; "></i></button>
+                                <button href="#" id="iO&P" class="btn d-flex justify-content-between btnL_M"> Learn More
+                                    <i class="fa fa-angle-down" style=" color: blue; "></i></button>
                             </div>
                         </div>
                     </div>
@@ -128,7 +142,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="Hme_section">
         <div class="container-fluid">
             <div class="row HME">
 
@@ -226,11 +240,13 @@
                     <div class="card row OP-card">
                         <img src="/assets/images/Barbara-Leech-hero_quotes-960x640 1 (4).png" class="" alt="...">
                         <div class="card-body col">
-                            <p class="card-text">“Year over year, we’ve seen a 14%increase in total collection
+                            <p class="card-text">“Year over year, we’ve seen a 14% increase in total collection
                                 resolution.”.</p>
-                            <h5 class="card-title">Joyce Perrone</h5>
-                            <span>Director of Business Development and IT Services,De La Torre Orthotics and
-                                Prosthetics, Inc.</span>
+                            <div>
+                                <h5 class="card-title">Joyce Perrone</h5>
+                                <span>Director of Business Development and IT Services,De La Torre Orthotics and
+                                    Prosthetics, Inc.</span>
+                            </div>
                         </div>
                     </div>
 
