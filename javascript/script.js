@@ -1,4 +1,14 @@
+document.getElementById("searchBtn").addEventListener("click" ,()=>{
+    if (!(document.getElementById("search").style.display === "block")) {
 
+        document.getElementById("search").style.display = "block"
+    }
+
+    else {
+        document.getElementById("search").style.display = "none"
+
+    }
+})
 
 
 document.getElementById("iHme").addEventListener("click", () => {

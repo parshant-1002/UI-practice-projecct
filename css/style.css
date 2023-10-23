@@ -29,6 +29,12 @@ html,
 body {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+.form-control
+{
+    display: none;
 }
 
 .info_hme,
@@ -46,10 +52,6 @@ body {
 
 img {
     max-width: 100%;
-}
-
-.H-icon {
-    display: none;
 }
 
 /* Header starts  */
@@ -113,12 +115,12 @@ img {
 }
 
 .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
     margin-left: 30px;
 }
 
 .navbar .loginButton {
-    display: flexbox;
-    justify-content: center;
     padding: 12px 16px 12px 16px;
     gap: 8px;
     background-color: var(--topbarColor);
@@ -139,12 +141,12 @@ header {
     background-color: #0F2D5B;
 }
 
-.hero:before {
-    content: url(/assets/images/image7.png);
-    position: absolute;
-    top: 184px;
-    right: 0;
-    height: 488px;
+.bg-image
+{
+    background-image: url("/assets/images/image7.png");
+    background-size: 50%;
+    background-position: right top 50px;
+    background-repeat: no-repeat;
 }
 
 .hero {
@@ -304,6 +306,10 @@ header {
     flex-shrink: 0;
 }
 
+.hidden-card
+{
+    display: none;
+}
 .product-tag {
     padding: 7px 8px 5px 8px;
     width: fit-content;
@@ -504,6 +510,7 @@ header {
 .card-body small,
 .OP-card span,
 .small {
+    width: 80%;
     color: var(--grey-500, #79797A);
     font-size: 13px;
     font-style: normal;
@@ -585,6 +592,14 @@ header {
     text-align: center;
 }
 
+.hme-content {
+    gap: 24px
+}
+
+.section-Testimonial,
+.section-products {
+    background-color: #EFFAFF;
+}
 
 .header h4 {
     margin-bottom: 20px !important;
@@ -667,6 +682,7 @@ header {
 }
 
 .links {
+    margin-top: 30px;
     width: 80%;
     gap: 80px;
     flex-direction: row;
@@ -674,13 +690,13 @@ header {
 
 .product_Links {
     display: flex;
-    width: 60%;
+    width: 90%;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 }
 
-.product_Links h6 {
-    color: var(--grey-700, #424243);
+.product_Links a {
+    color: var(--grey-700, #424243) !important;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -709,21 +725,20 @@ header {
 .community,
 .about,
 .contact_us {
-    width: 35%;
+    width: 40%;
+    gap: 16px;
 }
 
-.community h6,
-.about h6,
-.contact_us h6 {
-    color: var(--grey-500, #79797A);
+.community a,
+.about a,
+.contact_us a {
+    color: var(--grey-500, #79797A) !important;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    text-decoration-line: underline;
-    list-style: none;
-    padding-left: 12px;
+    text-decoration-line: underline !important;
 }
 
 
@@ -733,7 +748,7 @@ header {
 .contact_us h4 {
     height: 40px;
     display: flex;
-    padding: 12px;
+    padding: 12px !important;
     align-items: flex-start;
     gap: 10px;
     color: var(--grey-700, #424243);
@@ -769,7 +784,15 @@ header {
 
 .hiring {
 
-    gap: 24px;
+    padding: 4px;
+    gap: 8px;
+    color: var(--grey-700, #424243);
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
 }
 
 .logo_hiring {
@@ -790,22 +813,10 @@ header {
     flex-shrink: 0;
 }
 
-.hiring h3 {
-    color: var(--grey-700, #424243);
-    font-family: Roboto;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px;
-}
-
 .graph-pic {
-    height: 496px;
     background-image: url(/assets/images/Graphic_\ Chart.png);
     background-color: var(--topbarColor);
-    padding: 99px 119px 88px 80px !important;
-    margin-left: -10px;
-    background-size: 100%;
+    padding: 70px 119px 88px 80px !important;
 }
 
 .BrightAction {
@@ -826,6 +837,7 @@ header {
 }
 
 .imageGirl {
+    background-size: cover;
     background-image: url(/assets/images/image\ 7\ \(1\).png);
 }
 
@@ -898,15 +910,10 @@ header {
         display: block;
     }
 
-    .hero:before {
-        content: unset;
+    .bg-image
+    {
+        background: none;
     }
-
-    .navbar .menu {
-        margin-right: -50px;
-        gap: 20px
-    }
-
 
     .content .StreamlineText {
         font-size: 31px;
@@ -964,17 +971,14 @@ header {
     .quote,
     .OP-card {
         width: 100% !important;
-        margin-left: 0px !important;
     }
 
     .card-title {
         font-size: 18px;
-        margin-bottom: 0px !important;
     }
 
     .card-text {
         font-size: 16px;
-        margin-bottom: 0px !important;
     }
 
     .HME {
@@ -1009,10 +1013,6 @@ header {
         width: 80% !important;
     }
 
-    .sub-title {
-        height: unset;
-        font-size: 18;
-    }
 
     .btn-arrow-text {
         width: 100% !important;
@@ -1088,10 +1088,6 @@ header {
         font-size: 16px;
     }
 
-    .testimonials-content {
-        height: 320px !important;
-    }
-
     .closer {
         padding: 0;
     }
@@ -1147,8 +1143,13 @@ header {
         width: 100% !important;
     }
 
-    .navbar .menu {
-        gap: 10px
+
+    .loginButton {
+        width: 30%;
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
     }
 
     .help-div {
@@ -1202,11 +1203,6 @@ header {
 
     .card-div {
         gap: 20px;
-    }
-
-    .card {
-        padding: 16px 24px 16px 16px;
-        gap: 16px;
     }
 
     .card-title {
@@ -1330,10 +1326,6 @@ header {
         font-size: 16px;
     }
 
-    .testimonials-content {
-        height: 320px !important;
-    }
-
     .closer {
         padding: 0;
     }
@@ -1449,6 +1441,13 @@ header {
         align-items: flex-start;
     }
 
+    .hidden-card
+    {
+        display: flex;
+        width: 100%;
+        box-shadow: none;
+        gap:20px;
+    }
     .para-product {
         font-size: 24px;
         line-height: 40px;
@@ -1456,7 +1455,7 @@ header {
 
     .card {
         padding: 16px 24px 16px 32px;
-        gap: 16px;
+        gap: 40px;
     }
 
     .frame213 {
@@ -1466,12 +1465,11 @@ header {
 
     .card-title {
         font-size: 32px;
-        margin-bottom: 20px !important;
     }
 
     .card-text {
         font-size: 26px;
-        margin-bottom: 10px !important;
+        line-height: 30px;
     }
 
     .card-body .btn {
@@ -1496,11 +1494,6 @@ header {
     .paraMain {
         font-size: 24px;
         line-height: 30px;
-    }
-
-    .card-connected {
-        padding: 8px 0px 8px 16px;
-        height: 140px !important;
     }
 
     .card-body {
@@ -1539,7 +1532,7 @@ header {
     .quote,
     .OP-card {
         width: 80% !important;
-        padding: 16px 0px 16px 0px;
+        padding: 16px 0px 16px 16px;
         flex-direction: column;
         flex-wrap: unset !important;
         gap: 16px
@@ -1663,8 +1656,11 @@ header {
         padding: 0px !important;
     }
 
-    .col-8,
-    .col-4 {
+    .col-7,
+    .col-5 {
+        padding: 0;
+        margin: 0;
+        width: 100% !important;
         width: 100% !important;
     }
 }
@@ -1677,11 +1673,6 @@ header {
 
     .row {
         flex-direction: column;
-    }
-
-    .navbar .menu,
-    .navbar .loginButton {
-        display: none;
     }
 
     .help-div {
@@ -1746,11 +1737,6 @@ header {
 
     .card-title {
         font-size: 18px;
-        margin-bottom: 10px !important;
-    }
-
-    .card-text {
-        margin-bottom: 10px !important;
     }
 
     .HME {
@@ -1772,20 +1758,6 @@ header {
     .paraMain {
         font-size: 18px;
         line-height: 24px;
-    }
-
-    .card-connected {
-        padding: 8px 0px 8px 16px;
-        height: 140px !important;
-    }
-
-    .card-body {
-        width: 80% !important;
-    }
-
-    .sub-title {
-        height: unset;
-        font-size: 18;
     }
 
     .btn-arrow-text {
@@ -1811,7 +1783,7 @@ header {
 
     .quote,
     .OP-card {
-        padding: 16px 0px 16px 0px;
+        padding: 16px 0px 16px 16px;
         width: 100% !important;
         flex-direction: column;
         flex-wrap: unset !important;
@@ -1936,5 +1908,17 @@ header {
     .col-8,
     .col-4 {
         width: 100% !important;
+    }
+}
+
+@media (max-width:400px)
+{
+    .card-text
+    {
+        font-size: 14px;
+    }
+
+    .card-body .btn {
+        font-size: 15px;
     }
 }
